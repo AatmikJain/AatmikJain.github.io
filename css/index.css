@@ -1,0 +1,82 @@
+body{
+    background-color: rgb(32, 32, 32);
+    margin: 2%;
+    vertical-align: middle;
+}
+
+h1{
+    font-size: 5vw;
+    margin-block-start: 2%;
+    margin-block-end: 1%;
+}
+
+h3{
+    font-size: 2vw;
+    font-weight: 200;
+    margin-block-start: 1%;
+    margin-block-end: 2%;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    margin: 2%;
+    
+}
+a:hover{
+    color: yellow;
+    transition: all .5s ease-in-out;
+}
+
+main{
+    /* background-color: brown;  */
+    color: white;
+    /* opacity: .75; */
+    display:flex ;
+    flex-flow: row wrap;
+    /* width: fit-content;
+    height: 100%; */
+}
+
+.jain{
+    color: yellow;
+}
+
+.profileImage{
+    /* background-color: violet; */
+    width: 30%;
+    height: auto;
+    padding: 2%;
+}
+
+#profileImage{
+    width: 100%;
+    height: auto;
+    border: 2px solid;
+    border-radius: 50%;
+    border-color: black;
+}
+
+.details{
+    /* background-color: wheat; */
+    height: auto;
+    padding: 3%;
+}
+
+
+@media screen and (max-width:600px){
+    main{
+        flex-direction: column;
+        text-align: center;
+    }
+    h1{
+        font-size: 15vw;
+    }
+    h3{
+        font-size: 5vw;
+    }
+
+    .profileImage{
+        width: fit-content;
+        height: auto
+    }
+}
