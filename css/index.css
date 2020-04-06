@@ -20,22 +20,50 @@ h3{
 a{
     color: rgb(255, 255, 255);
     margin: 2%;
-    
+    text-decoration: none;
+    text-align: center;
 }
 a:hover{
-    color: yellow;
     transition: all .5s ease-in-out;
 }
 
 main{
     /* background-color: brown;  */
     color: white;
-    /* opacity: .75; */
     display:flex ;
     flex-flow: row wrap;
-    /* width: fit-content;
-    height: 100%; */
 }
+
+.menu{
+    /* background-color: aquamarine; */
+}
+
+.menu-list{
+    /* background-color: blue; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: right;
+}
+
+.menu-item{
+    /* background-color: lawngreen; */
+    display: inline-block;
+    white-space: nowrap;
+    font-size: 2vw;
+}
+
+.menu-item a {
+    display: block;
+    /* color: white; */
+    text-align: center;
+    padding: 25px ;
+    text-decoration: none;
+  }
+li a:hover {
+    background-color: #4CAF50;
+  }
 
 .jain{
     color: yellow;
@@ -62,6 +90,9 @@ main{
     padding: 3%;
 }
 
+.icons a:hover{
+    color: yellow;
+}
 
 @media screen and (max-width:600px){
     main{
