@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(32, 32, 32);
+    margin: 2%;
+    vertical-align: middle;
+}
+
+h1{
+    font-size: 5vw;
+    margin-block-start: 2%;
+    margin-block-end: 1%;
+}
+
+h3{
+    font-size: 2vw;
+    font-weight: 200;
+    margin-block-start: 1%;
+    margin-block-end: 2%;
+}
+
+a{
+    color: rgb(255, 255, 255);
+    margin: 2%;
+    text-decoration: none;
+    text-align: center;
+}
+
+a:hover{
+    transition: all .5s ease-in-out;
+}
+
+/* #active{
+    background-color: rgb(44, 43, 43);
+} */
