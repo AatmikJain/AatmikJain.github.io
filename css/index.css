@@ -1,17 +1,20 @@
-main{
+#about-row1{
     /* background-color: brown;  */
     color: white;
     display:flex ;
     flex-flow: row wrap;
 }
 
-.jain{
-    color: yellow;
+#about-row2{
+    /* background-color: khaki; */
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
 }
 
 .profileImage{
     /* background-color: violet; */
-    width: 30%;
+    width: 20%;
     height: auto;
     padding: 2%;
 }
@@ -28,7 +31,13 @@ main{
     /* background-color: wheat; */
     width: fit-content;
     height: auto;
+    line-height: auto;
     padding: 3%;
+    vertical-align: middle;
+}
+
+.jain{
+    color: yellow;
 }
 
 .icons a:hover{
