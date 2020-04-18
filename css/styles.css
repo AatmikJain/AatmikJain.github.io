@@ -17,6 +17,11 @@ h3{
     margin-block-end: 2%;
 }
 
+ul{
+    list-style-type: none;
+    text-align: left;
+}
+
 a{
     color: rgb(255, 255, 255);
     margin: 2%;
