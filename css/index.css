@@ -1,7 +1,7 @@
 #about-row1{
     /* background-color: brown;  */
     color: white;
-    display:flex ;
+    display: flex ;
     flex-flow: row wrap;
 }
 
@@ -40,24 +40,87 @@
     color: yellow;
 }
 
+.heading{
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+}
+
 .edu-skill{
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .education-container{
     background-color: rgb(65, 61, 61);
-    padding: 5%;
+    width: fit-content;
+    padding: 2%;
     border-radius: 2%;
     box-shadow: 4px 4px rgb(20, 20, 20);
+    white-space: nowrap;
+}
+
+.course{
+    margin-top: 2%;
+    font-size: 1.3rem;
+}
+
+.institute{
+    font-size: 1.05rem;
+    color: rgb(206, 209, 209);
 }
 
 .skills-container{
     background-color: rgb(65, 61, 61);
-    padding: 5%;
+    width: auto;
+    white-space: nowrap;
     border-radius: 2%;
     box-shadow: 4px 4px rgb(20, 20, 20);
 }
+
+#skill-div-separator{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    /* padding: 5%; */
+    width: fit-content;
+    white-space: nowrap;
+}
+
+#skill-column1{
+    width: fit-content;
+    white-space: nowrap;
+    /* padding: 5%;
+    margin-right: 2%; */
+}
+
+#skill-column2{
+    width: fit-content;
+    white-space: nowrap;
+    /* padding-top: 5%;
+    margin-left: 2%; */
+}
+
+.skill-name{
+    font-size: 1.2rem;
+}
+
+.progress-bar-container{
+    width: 100%;
+    margin-bottom: 10%;
+    background-color: gray;
+}
+
+.progress-bar{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    border-radius: 0;
+    height: .4rem;
+    background-color: yellow;
+}
+
+
 
 .icons a:hover{
     color: yellow;

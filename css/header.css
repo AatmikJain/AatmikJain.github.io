@@ -1,6 +1,6 @@
-.menu{
-    /* background-color: aquamarine; */
-}
+/* .menu{
+    background-color: aquamarine;
+} */
 
 .menu-list{
     /* background-color: blue; */
@@ -14,6 +14,7 @@
 .menu-item{
     /* background-color: lawngreen; */
     display: inline-block;
+    width: fit-content;
     white-space: nowrap;
     font-size: 2vw;
 }
@@ -30,4 +31,6 @@
 
 .menu-item a:hover {
     background-color: #4CAF50;
+    width: fit-content;
+    border-radius: 10%;
 }
