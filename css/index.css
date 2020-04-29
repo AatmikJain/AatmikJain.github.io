@@ -1,8 +1,11 @@
+.about-container{
+    color: white;
+}
+
 #about-row1{
     /* background-color: brown;  */
-    color: white;
-    display: flex ;
-    flex-flow: row wrap;
+    display: inline-block ;
+    /* flex-flow: row; */
 }
 
 #about-row2{
@@ -14,6 +17,7 @@
 
 .profileImage{
     /* background-color: violet; */
+    float: left;
     width: 20%;
     height: auto;
     padding: 2%;
@@ -29,6 +33,7 @@
 
 .details{
     /* background-color: wheat; */
+    float: left;
     width: fit-content;
     height: auto;
     line-height: auto;
@@ -43,6 +48,22 @@
 .heading{
     font-size: 1.6rem;
     margin-bottom: 5%;
+}
+
+.contact{
+    float: right;
+    width: fit-content;
+    margin-right: 5%;
+    height: auto;
+    padding-top: 3%;
+}
+
+.contact li{
+    margin-bottom: 25%;
+}
+
+.contact a:hover{
+    color: yellow;
 }
 
 .edu-skill{
@@ -122,9 +143,6 @@
 
 
 
-.icons a:hover{
-    color: yellow;
-}
 
 @media screen and (max-width:600px){
     main{
