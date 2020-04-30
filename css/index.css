@@ -1,15 +1,16 @@
 .about-container{
-    color: white;
+    margin: 2%;
 }
 
 #about-row1{
     /* background-color: brown;  */
     display: inline-block ;
-    /* flex-flow: row; */
 }
 
 #about-row2{
     /* background-color: khaki; */
+    margin-top: 3%;
+    margin-bottom: 3%;
     margin-left: 10%;
     margin-right: 10%;
     font-size: 20px;
@@ -37,12 +38,22 @@
     width: fit-content;
     height: auto;
     line-height: auto;
-    padding: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-left: 8%;
     vertical-align: middle;
 }
 
 .jain{
     color: yellow;
+}
+
+.tagline{
+    color: rgb(222, 241, 169);
+}
+
+.leader{
+    color: rgb(222, 241, 169);
 }
 
 .heading{
@@ -51,10 +62,15 @@
 }
 
 .contact{
+    /* background-color: black;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%; */
+    padding: 1%;
     float: right;
     width: fit-content;
-    margin-right: 5%;
     height: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
     padding-top: 3%;
 }
 
@@ -69,17 +85,26 @@
 .edu-skill{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
+    text-align: center;
+    padding: 3%;
 }
 
 .education-container{
     background-color: rgb(65, 61, 61);
+    display: inline-block;
     width: fit-content;
     padding: 2%;
     border-radius: 2%;
     box-shadow: 4px 4px rgb(20, 20, 20);
     white-space: nowrap;
+    flex-grow: 1;
+    margin-right: 10%;
 }
+
+/* .education-container ul{
+    text-align: center;
+} */
 
 .course{
     margin-top: 2%;
@@ -93,51 +118,64 @@
 
 .skills-container{
     background-color: rgb(65, 61, 61);
-    width: auto;
-    white-space: nowrap;
+    display: inline-block;
+    width: fit-content;
+    /* white-space: nowrap; */
     border-radius: 2%;
     box-shadow: 4px 4px rgb(20, 20, 20);
+    flex-grow: 4;
+    margin-left: 10%;
+    margin-right: 5%;
 }
 
 #skill-div-separator{
-    display: flex;
-    flex-flow: row;
+    display: inline-block;
     justify-content: space-evenly;
-    /* padding: 5%; */
-    width: fit-content;
+    width: 100%;
     white-space: nowrap;
 }
 
 #skill-column1{
+    float: left;
     width: fit-content;
-    white-space: nowrap;
-    /* padding: 5%;
-    margin-right: 2%; */
+    /* white-space: nowrap; */
+    padding: 5%;
+    margin-left: 5%;
+}
+
+#skill-column1 ul li{
+    margin-bottom: 2%;
 }
 
 #skill-column2{
+    float: right;
     width: fit-content;
-    white-space: nowrap;
-    /* padding-top: 5%;
-    margin-left: 2%; */
+    padding: 5%;
+    /* white-space: nowrap; */
+    margin-right: 5%;
+}
+
+#skill-column2 ul li{
+    margin-bottom: 2%;
 }
 
 .skill-name{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .progress-bar-container{
     width: 100%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
     background-color: gray;
 }
 
 .progress-bar{
     display: flex;
     flex-direction: row;
+    font-size: x-small;
     text-align: center;
     border-radius: 0;
-    height: .4rem;
+    height: fit-content;
     background-color: yellow;
 }
 
