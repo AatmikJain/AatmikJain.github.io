@@ -51,3 +51,8 @@ a:hover{
 /* #active{
     background-color: rgb(44, 43, 43);
 } */
+
+.heading{
+    font-size: 1.6rem;
+    margin-bottom: 5%;
+}

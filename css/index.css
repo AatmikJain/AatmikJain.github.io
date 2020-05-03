@@ -56,11 +56,6 @@
     color: rgb(222, 241, 169);
 }
 
-.heading{
-    font-size: 1.6rem;
-    margin-bottom: 5%;
-}
-
 .contact{
     /* background-color: black;
     border-top-left-radius: 20%;
@@ -156,7 +151,7 @@
 }
 
 #skill-column2 ul li{
-    margin-bottom: 2%;
+    margin-bottom: 20%;
 }
 
 .skill-name{
@@ -179,8 +174,52 @@
     background-color: yellow;
 }
 
+.exp-container:after{
+    content: "";
+    display: table;
+    clear: both;
+}
 
+.workExp{
+    /* background-color: yellowgreen; */
+    float: left;
+    width: 50%;
+}
 
+.work-block{
+    background-color: rgb(65, 61, 61);
+    border-radius: 2%;
+    box-shadow: 4px 4px rgb(20, 20, 20);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+    padding: 2%;
+}
+
+.job-title{
+    font-size: 1.3rem;
+}
+
+.company{
+    font-size: 1.1rem;
+}
+
+.duration{
+    font-size: 1rem;
+    color: rgb(182, 181, 181);
+}
+
+.description{
+    font-size: 1rem;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.handles{
+    /* background-color: aqua; */
+    float: right;
+    width: 50%;
+}
 
 @media screen and (max-width:600px){
     main{
