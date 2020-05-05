@@ -1,9 +1,14 @@
 body{
     background-color: rgb(32, 32, 32);
     margin: 2%;
+    margin-top: 0%;
     vertical-align: middle;
     text-align: center;
     color: white;
+}
+
+main{
+    padding-top: 5%;
 }
 
 h1{
