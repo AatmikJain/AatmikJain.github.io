@@ -14,7 +14,7 @@
     margin-bottom: 3%;
     margin-left: 10%;
     margin-right: 10%;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
 .profileImage{
@@ -84,6 +84,7 @@
     /* justify-content: space-evenly; */
     text-align: center;
     padding: 3%;
+    margin-bottom: 3%;
 }
 
 .education-container{
