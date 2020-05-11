@@ -61,3 +61,19 @@ a:hover{
     font-size: 1.6rem;
     margin-bottom: 5%;
 }
+
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 2.3rem;
+        margin-block-start: 5%;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+}
