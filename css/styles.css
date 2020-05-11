@@ -62,7 +62,7 @@ a:hover{
     margin-bottom: 5%;
 }
 
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 1200px){
     h1{
         font-size: 5rem;
     }
