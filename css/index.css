@@ -15,6 +15,7 @@
     margin-left: 10%;
     margin-right: 10%;
     font-size: 1.5rem;
+    text-align: justify;
 }
 
 .profileImage{
@@ -82,12 +83,8 @@
     content: "";
     display: table;
     clear: both;
-    /* margin-left: 10%; */
 }
 .edu-skill{
-    /* text-align: center;
-    padding: 3%;
-    margin-bottom: 3%; */
     margin: 5%;
 }
 
@@ -107,11 +104,16 @@
 
 .course{
     margin-top: 2%;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 
 .institute{
-    font-size: 1.05rem;
+    font-size: 1.3rem;
+    color: rgb(206, 209, 209);
+}
+
+.subjects{
+    font-size: 1rem;
     color: rgb(206, 209, 209);
 }
 
@@ -137,7 +139,7 @@
     width: fit-content;
     /* white-space: nowrap; */
     /* padding: 5%; */
-    margin-left: 7%;
+    margin-left: 5%;
 }
 
 #skill-column1 ul li{
@@ -149,7 +151,7 @@
     width: fit-content;
     /* padding: 5%; */
     /* white-space: nowrap; */
-    margin-right: 20%;
+    margin-right: 15%;
 }
 
 #skill-column2 ul li{
@@ -157,7 +159,7 @@
 }
 
 .skill-name{
-    font-size: 1.3rem;
+    font-size: 1.6rem;
 }
 
 .progress-bar-container{
@@ -199,25 +201,27 @@
 }
 
 .job-title{
-    font-size: 1.3rem;
+    font-size: 1.65rem;
+    font-weight: bold;
 }
 
 .sub-job-title{
-    font-size: 1.2rem;
+    font-size: 1.45rem;
+    font-weight: bold;
     margin-top: 5%;
 }
 
 .company{
-    font-size: 1.1rem;
+    font-size: 1.4rem;
 }
 
 .duration{
-    font-size: 1rem;
+    font-size: 1.2rem;
     color: rgb(182, 181, 181);
 }
 
 .description{
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -238,54 +242,103 @@
     main{
         flex-direction: column;
         text-align: center;
-        margin-left: 5%;
-        margin-right: 5%;
+        padding: 0%;
+    }
+    
+    #about-row1{
+        display: inline-block;
+        width: 100%;
+        margin-bottom: 2%;
     }
 
     .profileImage{
-        width: fit-content;
+        float: none;
+        width: 100%;
         height: auto
+    }
+
+    .details{
+        float: none;
+        margin: 0%;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .contact{
+        float: none;
+        padding: 0%;
+        margin: 0%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact ul{
+        text-align: center;
+    }
+    .contact li{
+        display: inline;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    #about-row2{
+        margin-top: 5%;
+        margin-bottom: 7%;
     }
 
     .edu-skill{
         display: inline;
+        margin: 0%;
     }
+
     .education-container{
         float: none;
-        padding: 5%;
-        width: fit-content;
-        margin: 5%;
+        width: 100%;
+        border-radius: 0%;
+        box-shadow: 0px 0px;
     }
+    .education-container ul{
+        padding-left: 10%;
+    }
+
     .skills-container{
+        background-color: rgb(32, 32, 32);;
         float: none;
-        width: 80%;
-        margin: 5%;
-        padding: 5%;
+        width: 100%;
+        border-radius: 0%;
+        box-shadow: 0px 0px;
     }
+
+    #skill-div-separator{
+        display: inline;
+    }
+
     #skill-column1{
         float: none;
         width: 100%;
+        padding-left: 5%;
         margin: 0%;
-        text-align: center;
+        text-align: left;
     }
     #skill-column1 ul li{
-        margin-bottom: 8%;
+        margin-bottom: 5%;
     }
     #skill-column2{
         float: none;
         width: 100%;
+        padding-left: 5%;
         margin: 0%;
-        text-align: center;
+        text-align: right;
     }
     #skill-column2 ul li{
-        margin-bottom: 8%;
+        margin-bottom: 5%;
     }
     .skill-name{
         font-size: 1.7rem;
     }
 
     .progress-bar-container{
-        width: 100%;
+        width: 80%;
         margin-bottom: 0%;
     }
 
@@ -293,9 +346,19 @@
         display: inline;
     }
     .workExp{
+        background-color: rgb(65, 61, 61);
+        padding-top: 5%;
         float: none;
         width: 100%;
     }
+    
+    .work-block{
+        border-radius: 0%;
+        box-shadow: 0px 0px;
+        margin: 0%;
+        padding-left: 5%;
+    }
+    
     .handles{
         float: none;
         width: 100%;
