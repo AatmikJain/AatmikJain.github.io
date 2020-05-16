@@ -63,9 +63,13 @@ a:hover{
     margin-bottom: 5%;
 }
 
+
 @media screen and (max-width: 1200px){
-    body{
+
+    html, body{
         margin: 0%;
+        width: 100%;
+        overflow-x: hidden;
     }
     
     h1{

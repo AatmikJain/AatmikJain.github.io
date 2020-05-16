@@ -8,6 +8,10 @@
         <link rel = "stylesheet" type="text/css" href="css/header.css">
         <link rel = "stylesheet" type="text/css" href="css/styles.css">
         <link rel = "icon" type="image/jpg" href="img/AatmikJain.jpg">
+        <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+        <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+
+        
     </head>
     <body>
         <a name="top"></a>
@@ -80,6 +84,19 @@
                     </p>
                 </div>
             </div>
+
+            <div class="owl-carousel">
+          
+                <div class="item"><img src="img/Aatmik_Jain_HackerRank_Profile.png" alt="Owl Image"></div>
+                <div class="item"><img src="img/Aatmik_Jain_LeetCode_Profile.png" alt="Owl Image"></div>
+                <div class="item"><img src="img/Aatmik_Jain_Google_Kickstart_Round_B_2019.png" alt="Owl Image"></div>
+                <div class="item"><img src="img/Aatmik_Jain_CodeChef_Feb_Lunchtime_2019.png" alt="Owl Image"></div>
+                <div class="item"><img src="img/Aatmik_Jain_Codefoster_Orientation_1st_year_2019(1).jpg" alt="Owl Image"></div>
+                <div class="item"><img src="img/Aatmik_Jain_Codefoster_Orientation_1st_year_20190911_183706.jpg" alt="Owl Image"></div>
+                <div class="item"><img src="img/Aatmik_Jain_codefoster_Orientation_2nd_year_2019.jpg" alt="Owl Image"></div>
+                <div class="item"><img src="img/Aatmik_Jain_CodeChef_Profile.png" alt="Owl Image"></div>
+              </div>
+
             <a name="education"></a>
             <a name="skills"></a>
             <div class="edu-skill">
@@ -247,5 +264,32 @@
                 <span style="float: right;"><a href="#top"><i class="fas fa-chevron-up" title="Go to Top"></i></a></span>
             </p>
         </footer>
+        <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+        <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+        <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function() {
+            $(".owl-carousel").owlCarousel({
+                nav: true,
+                navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
+                dots: true,
+                dotsEach: true,
+                center: true,
+                items:1,
+                loop:true,
+                margin:10,
+                autoplay:true,
+                autoplayTimeout:3500,
+                autoplaySpeed: 2500,
+                autoHeight: true,
+                responsive:{
+                    1200: {
+                        items:1,
+                        margin: 5
+                    }
+                }
+                });
+            });
+        </script>
     </body>
 </html>
