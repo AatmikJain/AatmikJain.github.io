@@ -82,12 +82,12 @@
 
 .owl-carousel .owl-stage {
     margin-left: 25%;
-  }
+}
 
 .owl-carousel .item{
     width: 50%;
     margin: 3%;
-  }
+ }
 
 .owl-carousel .item img{
     width: 50%;
@@ -321,6 +321,18 @@
         margin-bottom: 7%;
     }
 
+    .owl-carousel .owl-stage {
+        margin-left: 10%;
+    }
+
+    .owl-carousel .item{
+        width: 75%;
+        margin: 3%;
+     }
+    
+    .owl-carousel .item img{
+        width: 75%;
+    }
     .edu-skill{
         display: inline;
         margin: 0%;
