@@ -10,7 +10,6 @@
         <link rel = "icon" type="image/jpg" href="img/AatmikJain.jpg">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-
         
     </head>
     <body>
@@ -34,7 +33,6 @@
             </div>
         </header>
         <main class = "container">
-            <a name="about"></a>
             <div class="about-container">
                 <div id="about-row1">
                     <div class = "profileImage">
@@ -78,6 +76,7 @@
                         </ul>
                     </div>
                 </div>
+                <a name="about"></a>
                 <div id="about-row2">
                     <p>
                         I am currently pursuing Bachelor of Technology in Computer Science at Shri GS Institute of Technology and Science, Indore. I love to code and so I am a competitive programmer. I posses leadership and management qualities and can work very well in a team or alone. Moreover, I have a keen interest in exploring various technologies. 
@@ -85,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="owl-carousel">
+            <div class="owl-carousel owl-theme">
           
                 <div class="item"><img src="img/Aatmik_Jain_HackerRank_Profile.png" alt="Owl Image"></div>
                 <div class="item"><img src="img/Aatmik_Jain_LeetCode_Profile.png" alt="Owl Image"></div>
@@ -97,10 +96,8 @@
                 <div class="item"><img src="img/Aatmik_Jain_CodeChef_Profile.png" alt="Owl Image"></div>
               </div>
 
-            <a name="education"></a>
-            <a name="skills"></a>
             <div class="edu-skill">
-                <!-- <a name="education"></a> -->
+                <a name="education"></a>
                 <div class="education-container">
                     <p class="heading">Education</p>
                     <ul class="fa-ul">
@@ -131,7 +128,7 @@
                         
                     </ul>
                 </div>
-                <!-- <a name="skills"></a> -->
+                <a name="skills"></a>
                 <div class="skills-container">
                     <p class="heading">Skills</p>
                     <div id="skill-div-separator">
@@ -279,13 +276,14 @@
                 loop:true,
                 margin:10,
                 autoplay:true,
-                autoplayTimeout:3500,
+                autoplayTimeout:4000,
                 autoplaySpeed: 2500,
+                autoplayHovePause: true,
                 autoHeight: true,
                 responsive:{
                     1200: {
-                        items:1
-                        // margin: 5
+                        items:1,
+                        margin: 5
                     }
                 }
                 });
