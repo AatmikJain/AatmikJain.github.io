@@ -399,6 +399,7 @@
         padding-top: 5%;
         float: none;
         width: 100%;
+        margin-bottom: 5%;
     }
     
     .work-block{
@@ -409,6 +410,7 @@
     }
 
     .handles{
+        margin-top: 5%;
         float: none;
         width: 100%;
     }
