@@ -257,7 +257,7 @@
 
 .description{
     font-size: 1.2rem;
-    padding-left: 5%;
+    /* padding-left: 5%; */
     padding-right: 5%;
 }
 
@@ -354,6 +354,8 @@
         background-color: rgb(32, 32, 32);
         float: none;
         width: 100%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         border-radius: 0%;
         box-shadow: 0px 0px;
     }
