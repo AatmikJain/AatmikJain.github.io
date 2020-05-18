@@ -1,27 +1,39 @@
-/* .menu{
-    background-color: aquamarine;
-} */
+nav{
+    width: 100%;
+}
+
+.toggle{
+    margin-top: 2%;
+    width: 100%;
+    text-align: right;
+    display: none;
+}
 
 .menu-list{
-    background-color: rgb(32, 32, 32);
+    /* background-color: rgb(32, 32, 32); */
+    /* display: inline-block; */
+    width: 100%;
     position: fixed;
-    right: 0;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
     padding-top: 1%;
     padding-bottom: 1%;
     padding-right: 5%;
     overflow: hidden;
     text-align: right;
+    box-sizing: border-box;
 }
 
 .menu-item{
-    /* background-color: lawngreen; */
+    background-color: rgb(32, 32, 32);
     display: inline-block;
-    width: fit-content;
+    /* width: fit-content;s */
     white-space: nowrap;
     font-size: 2vw;
+}
+
+.menu-item a:hover {
+    background-color: #4CAF50;
+    width: fit-content;
+    border-radius: 10%;
 }
 
 .menu-item a {
@@ -34,12 +46,47 @@
     text-decoration: none;
 }
 
-.menu-item a:hover {
-    background-color: #4CAF50;
-    width: fit-content;
-    border-radius: 10%;
-}
+@media screen and (max-width: 1200px){
+    
+    .toggle{
+        display: block;
+        box-sizing: border-box;
+        margin-right: 5%; 
+        padding-right: 5%;  
+    }
+    .menu-list{
+        width: 100%;
+        position: relative;
+        display: none;
+        /* background-color: rgb(32, 32, 32);
+        position: fixed;
+        right: 0;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-right: 5%;
+        overflow: hidden;
+        text-align: right; */
+    }
+    
+    .menu-item{
+        display: block;
+        /* width: 100%; */
+        text-align: center;
+        /* white-space: nowrap; */
+        font-size: 4vw;
+    }
 
-/* .menu-item a:active{
-    background-color: grey;
-} */
+    .menu-item a{
+        display: inline-block;
+    }
+    .menu-item a:hover{
+        transition: none;
+    }
+    .active{
+        display: inline;
+        left: 0;
+    }
+}

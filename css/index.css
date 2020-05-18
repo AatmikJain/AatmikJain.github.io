@@ -257,7 +257,6 @@
 
 .description{
     font-size: 1.2rem;
-    /* padding-left: 5%; */
     padding-right: 5%;
 }
 
@@ -284,6 +283,9 @@
         width: inherit;
         height: auto;
         margin-bottom: 2%;
+    }
+    #about-row2{
+        text-align: left;
     }
 
     .profileImage{

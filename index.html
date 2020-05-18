@@ -4,8 +4,8 @@
         <title>Aatmik Jain</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel = "stylesheet" type="text/css" href="css/index.css">
-        <link rel = "stylesheet" type="text/css" href="css/header.css">
         <link rel = "stylesheet" type="text/css" href="css/styles.css">
+        <link rel = "stylesheet" type="text/css" href="css/header.css">
         <link rel = "icon" type="image/jpg" href="img/AatmikJain.jpg">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
@@ -13,24 +13,28 @@
     </head>
     <body>
         <a name="top"></a>
-        <header>
-            <div class = "menu">
-                <ul class = "menu-list">
-                    <li class = "menu-item">
-                        <a href = "#about">About Me</a>
-                    </li>
-                    <li class = "menu-item">
-                        <a href="#education">Education</a>
-                    </li>
-                    <li class = "menu-item">
-                        <a href="#skills">Skills</a>
-                    </li>
-                    <li class = "menu-item">
-                        <a href="#exp">Experience</a>
-                    </li>
-                </ul>
+        <nav>
+            <div class="toggle">
+                <i class="fa fa-bars fa-2x bars" aria-hidden="true"></i>
             </div>
-        </header>
+            <ul class = "menu-list">
+                <li class = "menu-item">
+                    <a href = "#about">About Me</a>
+                </li>
+                <li class = "menu-item">
+                    <a href="#education">Education</a>
+                </li>
+                <li class = "menu-item">
+                    <a href="#skills">Skills</a>
+                </li>
+                <li class = "menu-item">
+                    <a href="#exp">Experience</a>
+                </li>
+                <li class = "menu-item">
+                    <a href = "#codingProfiles">CodingProfiles</a>
+                </li>
+            </ul>
+        </nav>
         <main class = "container">
             <div class="about-container">
                 <div id="about-row1">
@@ -198,15 +202,15 @@
                 </div>
             </div>
             <!-- <hr> -->
-            <a name="exp"></a>
             <div class="exp-container">
+                <a name="exp"></a>
                 <div class="workExp">
                     <p class="heading">Experience</p>
 
                     <div class="work-block">
                         <ul class="fa-ul">
                             <li>
-                                <i class="fa-li fas fa-briefcase fa-x mb-1 mr-3 ml-3" aria-hidden="true"> </i>
+                                <i class="fa-li fas fa-briefcase fa-x" aria-hidden="true"> </i>
                                 <p class="job-title">Android Trainee</p>
                                 <p class="company"><a href="http://www.infoimpulse.com/" target="_blank">InfoImpulse Enterprise Solutions</a></p>
                                 <p class="duration">June 2019 - July 2019, Indore</p>
@@ -217,7 +221,7 @@
                     <div class="work-block">
                         <ul class="fa-ul">
                             <li>
-                                <i class="fa-li fas fa-briefcase fa-x mb-1 mr-3 ml-3" aria-hidden="true"> </i>
+                                <i class="fa-li fas fa-briefcase fa-x" aria-hidden="true"> </i>
                                 <p class="job-title">President</p>
                                 <p class="company"><a href="https://codefostergs.github.io/Website/" target="_blank">Club Codefoster</a></p>
                                 <p class="duration">February 2020 - Present, SGSITS, Indore</p>
@@ -241,7 +245,7 @@
                     <div class="work-block">
                         <ul class="fa-ul">
                             <li>
-                                <i class="fa-li fas fa-briefcase fa-x mb-1 mr-3 ml-3" aria-hidden="true"> </i>
+                                <i class="fa-li fas fa-briefcase fa-x" aria-hidden="true"> </i>
                                 <p class="job-title">Campus Ambassador</p>
                                 <p class="company"><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></p>
                                 <p class="duration">July 2018 - April 2019</p>
@@ -252,7 +256,7 @@
                     <div class="work-block">
                         <ul class="fa-ul">
                             <li>
-                                <i class="fa-li fas fa-briefcase fa-x mb-1 mr-3 ml-3" aria-hidden="true"> </i>
+                                <i class="fa-li fas fa-briefcase fa-x" aria-hidden="true"> </i>
                                 <p class="job-title">Student Partner 10 | 11</p>
                                 <p class="company"><a href="https://internshala.com/" target="_blank">Internshala</a></p>
                                 <p class="duration">June 2018 - November 2018</p>
@@ -261,6 +265,7 @@
                         </ul>
                     </div>
                 </div>
+                <a name="codingProfiles"></a>
                 <div class="handles">
                     <p class="heading">Check out my Coding Profiles!!</p>
                     <ul>
@@ -280,9 +285,11 @@
                 <span style="float: right;"><a href="#top"><i class="fas fa-chevron-up" title="Go to Top"></i></a></span>
             </p>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
         <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
         <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+        
         <script>
             $(document).ready(function() {
             $(".owl-carousel").owlCarousel({
@@ -305,6 +312,9 @@
                         margin: 5
                     }
                 }
+                });
+                $('.bars').click(function(){
+                    $('.menu-list').toggleClass('active');
                 });
             });
         </script>
