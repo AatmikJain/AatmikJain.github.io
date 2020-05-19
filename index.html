@@ -9,7 +9,7 @@
         <link rel = "icon" type="image/jpg" href="img/AatmikJain.jpg">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-        
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
         <a name="top"></a>
@@ -54,7 +54,7 @@
                         </h2>
                         <!-- download resume-->
                     </div>
-                    <div class= "contact">
+                    <div class= "contact" data-aos="fade-up">
                         <ul>
                             <li>
                                 <a href="https://www.linkedin.com/in/aatmik-jain/" target="_blank">
@@ -85,14 +85,14 @@
                     </div>
                 </div>
                 <a name="about"></a>
-                <div id="about-row2">
+                <div id="about-row2" data-aos="fade-up">
                     <p>
                         I am currently pursuing Bachelor of Technology in Computer Science at Shri GS Institute of Technology and Science, Indore. I love to code and so I am a competitive programmer. I posses leadership and management qualities and can work very well in a team or alone. Moreover, I have a keen interest in exploring various technologies. 
                     </p>
                 </div>
             </div>
 
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme"  data-aos="fade-up">
           
                 <div class="item"><a href="https://drive.google.com/file/d/1qHmOQEjlkOHAmOMiba7Pj5ZDLRrmBwFz/view?usp=sharing" target="_blank"><img src="img/Aatmik_Jain_Google_Kickstart_Round_B_2019.png" alt="Aatmik_Jain_Google_Kickstart_Round_B_2019" title="Google_Kickstart_Round_B_2019"></a></div>
                 <div class="item"><a href="https://drive.google.com/file/d/1J7ovDqB3X8dM1x6NXreyZg2hKjJTTkmu/view?usp=sharing" target="_blank"><img src="img/Aatmik_Jain_CodeChef_Feb_Lunchtime_2019.png" alt="Aatmik_Jain_CodeChef_February_Lunchtime_2019" title="CodeChef_February_Lunchtime_2019"></a></div>
@@ -108,7 +108,7 @@
 
             <div class="edu-skill">
                 <a name="education"></a>
-                <div class="education-container">
+                <div class="education-container" data-aos="fade-up">
                     <p class="heading">Education</p>
                     <ul class="fa-ul">
                         <li>
@@ -139,7 +139,7 @@
                     </ul>
                 </div>
                 <a name="skills"></a>
-                <div class="skills-container">
+                <div class="skills-container" data-aos="fade-up">
                     <p class="heading">Skills</p>
                     <div id="skill-div-separator">
                         <div id="skill-column1">
@@ -204,7 +204,7 @@
             <!-- <hr> -->
             <div class="exp-container">
                 <a name="exp"></a>
-                <div class="workExp">
+                <div class="workExp" data-aos="fade-up">
                     <p class="heading">Experience</p>
 
                     <div class="work-block">
@@ -266,7 +266,7 @@
                     </div>
                 </div>
                 <a name="codingProfiles"></a>
-                <div class="handles">
+                <div class="handles" data-aos="fade-up">
                     <p class="heading">Check out my Coding Profiles!!</p>
                     <ul>
                         <li><a href="https://leetcode.com/aatmikjain" target="_blank">Leetcode</a></li>
@@ -317,6 +317,10 @@
                     $('.menu-list').toggleClass('active');
                 });
             });
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
         </script>
     </body>
 </html>
