@@ -10,8 +10,7 @@ nav{
 }
 
 .menu-list{
-    /* background-color: rgb(32, 32, 32); */
-    /* display: inline-block; */
+    background-color: rgb(32, 32, 32);
     width: 100%;
     position: fixed;
     padding-top: 1%;
@@ -23,9 +22,8 @@ nav{
 }
 
 .menu-item{
-    background-color: rgb(32, 32, 32);
+    /* background-color: rgb(32, 32, 32); */
     display: inline-block;
-    /* width: fit-content;s */
     white-space: nowrap;
     font-size: 2vw;
 }
@@ -58,25 +56,12 @@ nav{
         width: 100%;
         position: relative;
         display: none;
-        /* background-color: rgb(32, 32, 32);
-        position: fixed;
-        right: 0;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        padding-top: 1%;
-        padding-bottom: 1%;
-        padding-right: 5%;
-        overflow: hidden;
-        text-align: right; */
     }
     
     .menu-item{
         display: block;
-        /* width: 100%; */
         text-align: center;
         padding: 2%;
-        /* white-space: nowrap; */
         font-size: 5vw;
     }
 
