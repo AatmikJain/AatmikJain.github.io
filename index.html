@@ -6,7 +6,7 @@
         <link rel = "stylesheet" type="text/css" href="css/index.css">
         <link rel = "stylesheet" type="text/css" href="css/styles.css">
         <link rel = "stylesheet" type="text/css" href="css/header.css">
-        <link rel = "icon" type="image/jpg" href="img/AatmikJain.jpg">
+        <link rel = "icon" type="image/jpg" href="img/AJ.png">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
         <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -302,7 +302,7 @@
                     margin:10,
                     autoplay:true,
                     autoplayTimeout:4000,
-                    autoplaySpeed: 2500,
+                    autoplaySpeed: 2000,
                     autoplayHovePause: true,
                     autoHeight: true,
                     responsive:{
@@ -320,7 +320,7 @@
                     $(this).closest('.owl-carousel').trigger('stop.owl.autoplay');
                 })
                 $('.owl-carousel .owl-item').on('mouseleave',function(e){
-                    $(this).closest('.owl-carousel').trigger('play.owl.autoplay',[4000]);
+                    $(this).closest('.owl-carousel').trigger('play.owl.autoplay',[3000]);
                 })
             });
         </script>
