@@ -35,6 +35,7 @@
                 </li>
             </ul>
         </nav>
+        <div class="scrollTop"><a href="#top"><i class="fas fa-chevron-circle-up fa-3x"></i></a></div>
         <main class = "container">
             <div class="about-container">
                 <div id="about-row1">
@@ -278,41 +279,49 @@
         <br>
         <hr>
         <footer>
-            <p>Feel free to contact me at <a href="mailto:aatmikjain1803@gmail.com" target="_blank" style="text-decoration: underline;">aatmikjain1803@gmail.com</a>
-                <span style="float: right;"><a href="#top"><i class="fas fa-chevron-up" title="Go to Top"></i></a></span>
-            </p>
+            <p>Feel free to contact me at <a href="mailto:aatmikjain1803@gmail.com" target="_blank" style="text-decoration: underline;">aatmikjain1803@gmail.com</a></p>
         </footer>
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
         <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
         <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-        
         <script>
+            window.addEventListener('scroll', function(){
+                var scroll = document.querySelector('.scrollTop');
+                scroll.classList.toggle("activeTop", window.scrollY>500)
+            })
             $(document).ready(function() {
-            $(".owl-carousel").owlCarousel({
-                nav: true,
-                navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
-                dots: true,
-                dotsEach: true,
-                center: true,
-                items:1,
-                loop:true,
-                margin:10,
-                autoplay:true,
-                autoplayTimeout:4000,
-                autoplaySpeed: 2500,
-                autoplayHovePause: true,
-                autoHeight: true,
-                responsive:{
-                    1200: {
-                        items:1,
-                        margin: 5
+                $(".owl-carousel").owlCarousel({
+                    nav: true,
+                    navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
+                    dots: true,
+                    dotsEach: true,
+                    center: true,
+                    items:1,
+                    loop:true,
+                    margin:10,
+                    autoplay:true,
+                    autoplayTimeout:4000,
+                    autoplaySpeed: 2500,
+                    autoplayHovePause: true,
+                    autoHeight: true,
+                    responsive:{
+                        1200: {
+                            items:1,
+                            margin: 5
+                        }
                     }
-                }
                 });
                 $('.bars').click(function(){
                     $('.menu-list').toggleClass('active');
                 });
+                
+                $('.owl-carousel .owl-item').on('mouseenter',function(e){
+                    $(this).closest('.owl-carousel').trigger('stop.owl.autoplay');
+                })
+                $('.owl-carousel .owl-item').on('mouseleave',function(e){
+                    $(this).closest('.owl-carousel').trigger('play.owl.autoplay',[4000]);
+                })
             });
         </script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
