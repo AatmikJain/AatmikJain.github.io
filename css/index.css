@@ -71,13 +71,18 @@
 
 .contact li{
     margin-bottom: 25%;
+    /* background-color: burlywood; */
+    width: fit-content;
+    text-align: center;
+    padding: 10%;
 }
 
+.contact i:hover{
+    transform: scale(1.5);
+}
 .contact a:hover{
     color: yellow;
-    box-shadow: 0 0 50px rgba(255, 255, 255, 1);
 }
-
 
 .owl-carousel .owl-stage {
     margin-left: 25%;
@@ -92,20 +97,21 @@
     width: 50%;
 }
 .owl-prev {
-    width: 10%;
+    width: fit-content;
     height: auto;
     position: absolute;
     top: 40%;
+    left: 5%;
     /* margin-left: -20px; */
     display: block !important;
 }
 
 .owl-next {
-    width: 10%;
+    width: fit-content;
     height: auto;
     position: absolute;
     top: 40%;
-    right: 2%;
+    right: 7%;
     display: block !important;
 }
 .owl-prev i, .owl-next i 
@@ -121,7 +127,6 @@
 .edu-skill{
     margin: 5%;
 }
-
 .education-container{
     background-color: rgb(65, 61, 61);
     float: left;
@@ -168,7 +173,7 @@
 
 .skills-container:hover{
     box-shadow: 0 0 50px #000000;
-    padding: 4%
+    padding: 4%;
 }
 
 #skill-div-separator{

@@ -322,6 +322,13 @@
                 $('.owl-carousel .owl-item').on('mouseleave',function(e){
                     $(this).closest('.owl-carousel').trigger('play.owl.autoplay',[3000]);
                 })
+                $(".owl-prev").hover(function(){
+                    $(this).css("background-color", "transparent");
+                });
+                $(".owl-next").hover(function(){
+                    $(this).css("background-color", "transparent");
+                });
+
             });
         </script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
