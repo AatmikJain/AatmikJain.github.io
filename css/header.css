@@ -12,10 +12,10 @@ nav{
 .menu-list{
     background-color: rgb(32, 32, 32);
     width: 100%;
-    position: fixed;
+    position: relative;
     padding-top: 1%;
     padding-bottom: 1%;
-    padding-right: 5%;
+    /* padding-right: 5%; */
     overflow: hidden;
     text-align: right;
     box-sizing: border-box;
@@ -42,6 +42,19 @@ nav{
     padding-left: 10px ;
     padding-right: 10px ;
     text-decoration: none;
+}
+
+.blinking-text{
+    animation:blinkingText 1.5s infinite;
+    float: left;
+    font-style: italic;
+}
+@keyframes blinkingText{
+    0%{     color: rgb(228, 222, 222);    }
+    49%{    color: rgb(228, 222, 222); }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: rgb(228, 222, 222);    }
 }
 
 @media screen and (max-width: 1200px){
@@ -74,5 +87,13 @@ nav{
     .active{
         display: inline;
         left: 0;
+    }
+
+    .blinking-text{
+        animation:blinkingText 2s infinite;
+        width: 100%;
+        text-align: center;
+        list-style: none;
+        font-size: 4vw;
     }
 }
