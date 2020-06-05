@@ -52,7 +52,7 @@ nav{
 @keyframes blinkingText{
     0%{     color: rgb(228, 222, 222);    }
     49%{    color: rgb(228, 222, 222); }
-    60%{    color: transparent; }
+    90%{    color: transparent; }
     99%{    color:transparent;  }
     100%{   color: rgb(228, 222, 222);    }
 }
