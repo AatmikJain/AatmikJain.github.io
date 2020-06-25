@@ -132,8 +132,12 @@ a:hover{
     border-radius: 20px;
 }
 
-::-webkit-scrollbar-thumb:active {
+::-webkit-scrollbar-thumb:hover {
     background: #83cf8e;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #5fb36c;
 }
 
 @media screen and (max-width: 1200px){
