@@ -7,6 +7,42 @@ body{
     color: white;
 }
 
+.loader-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(32, 32, 32);
+}
+
+.loader {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #37ff52; /* Blue */
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+  }
+
+  .loader-inner{
+      vertical-align: top;
+      display: inline-block;
+      width: 100%;
+      background-color: white;
+      animation: spin 1.5s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
 button{
     outline: none;
 }
@@ -87,6 +123,18 @@ a:hover{
     margin-bottom: 5%;
 }
 
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a1ffad;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #83cf8e;
+}
 
 @media screen and (max-width: 1200px){
 

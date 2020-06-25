@@ -12,6 +12,9 @@
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
         <a name="top"></a>
         <nav>
             <div class="toggle">
@@ -289,6 +292,9 @@
         <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
         <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
         <script>
+            $(window).on("load", function(){
+                $('.loader-wrapper').fadeOut('slow');
+            });
             window.addEventListener('scroll', function(){
                 var scroll = document.querySelector('.scrollTop');
                 scroll.classList.toggle("activeTop", window.scrollY>500)
