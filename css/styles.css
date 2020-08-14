@@ -124,20 +124,20 @@ a:hover{
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #a1ffad;
+    background: #18d26e;
     border-radius: 20px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #83cf8e;
+    background: #0bad57;
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background: #5fb36c;
+    background: #0a8f48;
 }
 
 @media screen and (max-width: 1200px){
