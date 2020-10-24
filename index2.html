@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aatmik Jain</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+        <link rel = "icon" type="image/jpg" href="img/AJ.png">
+        <link rel = "stylesheet" type="text/css" href="css/index2.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+    <body>
+        <!--Navigation-->
+        <div class="w3-row">
+            <div id="sidebar" class="w3-col w3-sidebar w3-black w3-bar-block" style="width:25%">
+                <img src="img/AatmikJain.jpg" class="w3-image w3-circle" style="padding: 10%;"><!--add border-->
+                <a href="#about" class="w3-bar-item w3-button w3-center w3-large">About</a>
+                <a href="#" class="w3-bar-item w3-button w3-center w3-large">Education</a>
+                <a href="#" class="w3-bar-item w3-button w3-center w3-large">Skills</a>
+                <a href="#" class="w3-bar-item w3-button w3-center w3-large">Experience</a>
+                <a href="#" class="w3-bar-item w3-button w3-center w3-large">Projects</a>
+                <a href="#" class="w3-bar-item w3-button w3-center w3-large">Achievements, Awards and Certificates</a>
+            </div>
+            <div class="navbar">
+                <button class="w3-button w3-xlarge" onclick="myFunction()">☰</button><!--☰ = &#9776;-->
+                <div id="demo" class="w3-bar-block navbar-list">
+                    <a href="#about" class="w3-bar-item w3-button w3-center">About</a>
+                    <a href="#" class="w3-bar-item w3-button w3-center">Education</a>
+                    <a href="#" class="w3-bar-item w3-button w3-center">Skills</a>
+                    <a href="#" class="w3-bar-item w3-button w3-center">Experience</a>
+                    <a href="#" class="w3-bar-item w3-button w3-center">Projects</a>
+                    <a href="#" class="w3-bar-item w3-button w3-center">Achievements, Awards and Certificates</a>
+                </div>
+                <img src="img/AatmikJain.jpg" class="w3-image w3-circle" style="padding: 20%;"><!--add border-->
+            </div>
+
+            <!--Content-->
+            <div class="container w3-rest">
+
+
+                <div class="about w3-container">
+                    <a name="about"></a>
+                    <h1 id="name" style="padding: 0px; margin: 0px;">Aatmik <span class="jain" style="color: yellow">Jain</span></h1>
+                    <ul class="w3-bar" style="padding: 0px; margin: 0px;">
+                        <li class="w3-bar-item">
+                            <a href="https://www.linkedin.com/in/aatmik-jain/" target="_blank">
+                                <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
+                            </a>
+                        </li>
+                        <li class="w3-bar-item">
+                            <a href="https://github.com/AatmikJain" target="_blank">
+                                <i class="fab fa-github fa-2x" title="GitHub"></i>
+                            </a>
+                        </li>
+                        <li class="w3-bar-item">
+                            <a href="https://www.instagram.com/aatmik_jain/" target="_blank">
+                                <i class="fab fa-instagram fa-2x" title="Instagram"></i>
+                            </a>
+                        </li>
+                        <li class="w3-bar-item">
+                            <a href="https://twitter.com/aatmikjainn" target="_blank">
+                                <i class="fab fa-twitter fa-2x" title="Twitter"></i>
+                            </a>
+                        </li>
+                        <li class="w3-bar-item">
+                            <a href="mailto:aatmikjain1803@gmail.com" target="_blank">
+                                <i class="fa fa-envelope fa-2x" title="Mail"></i>
+                            </a>
+                        </li>
+                        <li class="w3-bar-item">
+                            <a href="https://drive.google.com/file/d/1yJWKAtZ2hSzKdDBg8iZC9oj4TlRgEHgU/view?usp=sharing" target="_blank">
+                                <i class="fas fa-address-card fa-2x" title="Resume/CV"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <p>
+                        Some text about me...
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            function myFunction() {
+              var x = document.getElementById("demo");
+              if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+              } else { 
+                x.className = x.className.replace(" w3-show", "");
+              }
+            }
+        </script>
+    </body>
+</html>

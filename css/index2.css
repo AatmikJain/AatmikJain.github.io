@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(32, 32, 32);
+    margin: 2%;
+    margin-top: 0%;
+    vertical-align: middle;
+    color: white;
+}
+
+#sidebar a{
+    padding: 1%;
+}
+
+.navbar{
+    display: none;
+}
+
+.navbar-list{
+    display: none;
+}
+
+.container{
+    margin-left: 25%;
+    margin-top: 15%;
+}
+
+#name{
+    font-size: 500%;
+}
+
+.about p{
+    margin-top: 5%;
+    font-size: 125%;
+}
+
+@media screen and (max-width: 600px){
+    body{
+        text-align: center;
+    }
+
+    .w3-sidebar{
+        display: none;
+    }
+    
+    .navbar{
+        display: block;
+        text-align: right;
+    }
+
+    .container{
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+
+}
