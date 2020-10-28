@@ -24,13 +24,39 @@ body{
 }
 
 #name{
-    font-size: 500%;
+    font-size: 600%;
 }
 
 .about p{
     margin-top: 5%;
     font-size: 125%;
 }
+
+.education {
+    text-align: left;
+}
+
+.education-box{
+    margin-top: 2%;
+}
+
+.subhead h1{
+    font-size: 300%;
+    color: rgb(181, 228, 171);
+}
+
+.degree{
+    font-size: 150%;
+}
+
+.year{
+    text-align: right;
+}
+
+.branch, .institute{
+    color: gray;
+}
+
 
 @media screen and (max-width: 600px){
     body{
