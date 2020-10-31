@@ -2,15 +2,15 @@ body{
     background-color: rgb(32, 32, 32);
     margin: 2%;
     margin-top: 0%;
-    vertical-align: middle;
+    padding-bottom: 3%;
     color: white;
 }
 
 a{
     text-decoration: none;
 }
-a:hover{
-    -webkit-transform: scale(1.2);
+
+#sidebar{
 }
 
 #sidebar a{
@@ -56,8 +56,9 @@ a:hover{
     font-size: 150%;
 }
 
-.year{
+.date{
     text-align: right;
+    color: lightgray;
 }
 
 .branch, .institute{
@@ -66,6 +67,10 @@ a:hover{
 
 .experience-box{
     margin-top: 3%;
+}
+
+.experience-box:hover{
+    -webkit-transform: scale(1.03);
 }
 
 .post{

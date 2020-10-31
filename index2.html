@@ -10,16 +10,16 @@
     <body>
         <!--Navigation-->
         <div class="w3-row">
-            <div id="sidebar" class="w3-col w3-sidebar w3-black w3-bar-block" style="width:20%">
+            <div class="w3-col w3-sidebar w3-black w3-bar-block" id="sidebar" style="width:20%; position: relative;">
+                <div style="position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);">
                 <img src="img/AatmikJain.jpg" class="w3-image w3-circle" style="padding: 10%;"><!--add border-->
                 <a href="#about" class="w3-bar-item w3-button w3-center w3-large">About</a>
                 <a href="#education" class="w3-bar-item w3-button w3-center w3-large">Education</a>
                 <a href="#" class="w3-bar-item w3-button w3-center w3-large">Skills</a>
                 <a href="#" class="w3-bar-item w3-button w3-center w3-large">Experience</a>
-                <a href="#" class="w3-bar-item w3-button w3-center w3-large">Projects</a>
                 <a href="#" class="w3-bar-item w3-button w3-center w3-large">Achievements, Awards and Certificates</a>
-                <a href="#" class="w3-bar-item w3-button w3-center w3-large">Social Work</a>
-            </div>
+                <a href="#social-work" class="w3-bar-item w3-button w3-center w3-large">Social Work</a>
+            </div></div>
             <div class="navbar">
                 <button class="w3-button w3-xlarge" onclick="myFunction()">☰</button><!--☰ = &#9776;-->
                 <div id="demo" class="w3-bar-block navbar-list">
@@ -27,9 +27,8 @@
                     <a href="#education" class="w3-bar-item w3-button w3-center">Education</a>
                     <a href="#" class="w3-bar-item w3-button w3-center">Skills</a>
                     <a href="#" class="w3-bar-item w3-button w3-center">Experience</a>
-                    <a href="#" class="w3-bar-item w3-button w3-center">Projects</a>
                     <a href="#" class="w3-bar-item w3-button w3-center">Achievements, Awards and Certificates</a>
-                    <a href="#" class="w3-bar-item w3-button w3-center">Social Work</a>
+                    <a href="#social-work" class="w3-bar-item w3-button w3-center">Social Work</a>
                 </div>
                 <img src="img/AatmikJain.jpg" class="w3-image w3-circle" style="padding: 20%;"><!--add border-->
             </div>
@@ -81,34 +80,34 @@
 
                 <hr style="margin-left: 2%; margin-right: 5%;">
                 <!--percentage/cgpa to be added?-->
-                <div class="education w3-container">
+                <div class="education w3-container" style="width: 92%;">
                     <a name="education"></a>
                     <div class="subhead">
                         <h1>Education</h1>
                     </div>
 
                     <div class="education-box">
-                        <div class="w3-cell-row" style="width: 85%;">
+                        <div class="w3-cell-row">
                             <div class="degree w3-cell">Bachelor of Technology</div>
-                            <div class="year w3-cell">2021</div>
+                            <div class="date w3-cell">2021</div>
                         </div>
                         <div class="branch">Computer Science</div>
                         <div class="institute">Shri G.S. Institute of Technology and Science, Indore</div>
                     </div>
                     
                     <div class="education-box">
-                        <div class="w3-cell-row" style="width: 85%;">
+                        <div class="w3-cell-row">
                             <div class="degree w3-cell">Higher Secondary Education</div>
-                            <div class="year w3-cell">2017</div>
+                            <div class="date w3-cell">2017</div>
                         </div>
                         <div class="branch">Science, Mathematics, Informatics Practices</div>
                         <div class="institute">Delhi Public School, Indore</div>
                     </div>
 
                     <div class="education-box">
-                        <div class="w3-cell-row" style="width: 85%;">
+                        <div class="w3-cell-row">
                             <div class="degree w3-cell">Secondary Education</div>
-                            <div class="year w3-cell">2015</div>
+                            <div class="date w3-cell">2015</div>
                         </div>
                         <div class="institute">Delhi Public School, Indore</div>
                     </div>
@@ -123,19 +122,21 @@
                         <h1>Experience</h1>
                     </div>
                     <div class="w3-bar-block" style="width: 49.5%; float: left;">
-                        <div class="w3-bar-item" style="text-align: right;">Technical</div>
+                        <div class="w3-bar-item" style="text-align: right;"><i class="fas fa-chevron-left" style="color:rgb(98, 240, 98)"></i> Technical</div>
                         <div class="w3-bar-item w3-hover-shadow experience-box">
                             <div class="subhead company">
                                 <a href="https://codefostergs.github.io/Website/" target="_blank">CodeFoster Club, SGSITS</a>
                             </div>
                             <div class="post">
                                 <ul>
-                                    <li >President <span style="float: right;">Feb' 20 - Present</span></li>
-                                    <li>Head of Open Source<span style="float: right;">Feb' 19 - Feb'  20</span></li>
-                                    <li>Coordinator<span style="float: right;">Feb' 18 - Feb' 19</span></li>
+                                    <li >President <span class="date" style="float: right;">Feb' 20 - Present</span></li>
+                                    <li>Head of Open Source<span class="date" style="float: right;">Feb' 19 - Feb'  20</span></li>
+                                    <li>Coordinator<span class="date" style="float: right;">Feb' 18 - Feb' 19</span></li>
                                 </ul>
                             </div>
-                            <div class="description"></div>
+                            <div class="description">
+                                Leading the team of 25 students, from various streams and years, to develop and enhance their skills by collaborating with each others. Conducted various orientation sessions for juniors and organised college and city level coding competitions. CodeFoster is the official coding club of the college, aimed at encouraging everyone to learn at least the basics of computer science. The club do not differentiate students based on their fields.
+                            </div>
                         </div>
     
                         <div class="w3-bar-item w3-hover-shadow experience-box">
@@ -144,9 +145,14 @@
                             </div>
                             <div class="post">
                                 Web and Android Developer Intern
-                                <span style="float: right;">8 Jun' 20 - 7 Sept' 20</span>
+                                <span class="date" style="float: right;">8 Jun' 20 - 7 Sept' 20</span>
                             </div>
-                            <div class="description"></div>
+                            <div class="description">
+                                <ul>
+                                    <li>Reviewed and suggested features for company’s online Medical Management System</li>
+                                    <li>Developed an Android application which can interact with users and assist them in case of emergency (Alert system)</li>
+                                </ul>
+                            </div>
                         </div>
     
                         <div class="w3-bar-item w3-hover-shadow experience-box">
@@ -155,22 +161,33 @@
                             </div>
                             <div class="post">
                                 Android Trainee Intern
-                                <span style="float: right;">Jun' 19 - Jul' 19</span>
+                                <span class="date" style="float: right;">Jun' 19 - Jul' 19</span>
                             </div>
-                            <div class="description"></div>
+                            <div class="description">
+                                <ul>
+                                    <li>Developed a member directory application, where employees of the company can maintain their profiles.</li>
+                                    <li>Search, view and add notifications for any event.</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                     <div class="w3-bar-block" style="width: 49.5%; float: right;">
-                        <div class="w3-bar-item">Non-Technical</div>
+                        <div class="w3-bar-item">Non-Technical / Campus Ambassador Programs <i class="fas fa-chevron-right" style="color:rgb(98, 240, 98)"></i></div>
                         <div class="w3-bar-item w3-hover-shadow experience-box">
                             <div class="subhead company">
                                 <a href="https://www.scaler.com/" target="_blank">Scaler Academy</a>
                             </div>
                             <div class="post">
                                 Campus Lead: Scaler Achiever Club
-                                <span style="float: right;">Mar' 20 - Present</span>
+                                <span class="date" style="float: right;">Mar' 20 - Present</span>
                             </div>
-                            <div class="description"></div>
+                            <div class="description">
+                                <ul>
+                                    <li>Encouraged students to develop good coding skills by encoraging them to participate in company's practice and hiring test.</li>
+                                    <li>Intermediated between the company and placement cell to invite company for recruitments.</li>
+                                    <li>Fourth best Quaterly Campus Lead</li>
+                                </ul>
+                            </div>
                         </div>
     
                         <div class="w3-bar-item w3-hover-shadow experience-box">
@@ -179,9 +196,9 @@
                             </div>
                             <div class="post">
                                 Campus Ambassador
-                                <span style="float: right;">Jul' 18 - Apr' 19</span>
+                                <span class="date" style="float: right;">Jul' 18 - Apr' 19</span>
                             </div>
-                            <div class="description"></div>
+                            <div class="description">Promoted company's web platform to help students improve their technical skills.</div>
                         </div>
     
                         <div class="w3-bar-item w3-hover-shadow experience-box">
@@ -190,16 +207,29 @@
                             </div>
                             <div class="post">
                                 Student Partner 10 & 11
-                                <span style="float: right;">Jun' 18 - Nov' 18</span>
+                                <span class="date" style="float: right;">Jun' 18 - Nov' 18</span>
                             </div>
-                            <div class="description"></div>
+                            <div class="description">Motivated students of first and second year to enhance their skills and take internship even in first two years of their engineering.</div>
                         </div>
                     </div>
                     
-                    <div style="border-left: 1px solid; height: 500px; float: right;"></div>
+                    <div style="border: 1px dashed; height: 700px; float: right; color:rgb(98, 240, 98)"></div>
+                </div>
 
-                    
+                <hr style="margin-left: 2%; margin-right: 5%;">
 
+                <div class="social-work w3-container" style="width: 92%;">
+                    <a name="social-work"></a>
+                    <div class="subhead">
+                        <h1>Social Work</h1>
+                    </div>
+                    <div class="w3-hover-shadow social-work-box">
+                        <div class="subhead">
+                            <a href="https://hourofcode.com/" target="_blank">Hour Of Code</a>
+                            <span class="date" style="float: right;">2018, 2019</span>
+                        </div>
+                        <div class="description">Successfully pitched about the campaign to various school authorities and conducted sessions to introduce and promote Computer Science education to students of secondary classes. Hour of Code is a global non-profit campaign that aims to demystify "code", to show that anybody can learn the basics, and to broaden participation in the field of computer science.</div>
+                    </div>
                 </div>
 
 
