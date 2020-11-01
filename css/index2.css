@@ -77,6 +77,24 @@ a{
     color: lightgray;
 }
 
+.description{
+    text-align: justify;
+}
+
+.social-work{
+    text-align: left;
+    width: 92%;
+}
+
+.award{
+    text-align: left;
+    width: 92%;
+}
+
+.date{
+    white-space: nowrap;
+}
+
 
 @media screen and (max-width: 600px){
     body{
@@ -101,4 +119,11 @@ a{
         width: 97%;
     }
 
+    .social-work{
+        width: 97%;
+    }
+
+    .multiyear{
+        white-space: normal;
+    }
 }
