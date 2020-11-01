@@ -40,6 +40,7 @@ a{
 
 .education {
     text-align: left;
+    width: 92%;
 }
 
 .education-box{
@@ -94,6 +95,10 @@ a{
     .container{
         margin-left: 0%;
         margin-top: 0%;
+    }
+
+    .education {
+        width: 97%;
     }
 
 }
