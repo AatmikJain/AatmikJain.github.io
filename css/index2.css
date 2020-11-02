@@ -96,6 +96,25 @@ a{
     white-space: nowrap;
 }
 
+.scrollTop{
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    border-radius: 50%;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.scrollTop:hover{
+    box-shadow: 0 0 50px rgba(255, 255, 255, 1);
+}
+
+.scrollTop.activeTop{
+    visibility: visible;
+    opacity: 1;
+}
 
 @media screen and (max-width: 600px){
     body{
