@@ -116,6 +116,48 @@ a{
     opacity: 1;
 }
 
+/* linkedin */
+.contact li:hover .fa-linkedin {
+color: #2867B2;
+text-shadow: 0 0 15px #2867B2;
+transition: all 0.5s ease;
+}
+  
+/* github */
+.contact li:hover .fa-github {
+color: black;
+text-shadow: 0 0 15px black;
+transition: all 0.5s ease;
+}
+
+/* instagram */  
+.contact li:hover .fa-instagram {
+color: #bc2a8d;
+text-shadow: 0 0 15px #bc2a8d;
+transition: all 0.5s ease;
+}
+
+/* twitter */
+.contact li:hover .fa-twitter {
+color: #00aced;
+text-shadow: 0 0 15px #00aced;
+transition: all 0.5s ease;
+}
+
+/* mail */
+.contact li:hover .fa-envelope {
+color: #dd4b39;
+text-shadow: 0 0 15px #dd4b39;
+transition: all 0.5s ease;
+}
+
+/*resume*/
+.contact li:hover .fa-address-card {
+color: gray;
+text-shadow: 0 0 15px gray;
+transition: all 0.5s ease;
+}
+
 @media screen and (max-width: 600px){
     body{
         text-align: center;
