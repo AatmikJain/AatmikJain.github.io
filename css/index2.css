@@ -25,6 +25,21 @@ b{
     display: none;
 }
 
+.profile-img{
+    transform: scale(0.9);
+    margin-bottom: 10%;
+    box-shadow: 0 0 15px white;
+}
+
+.button{
+    color: gray
+}
+
+.button:hover{
+    color: white;
+    text-shadow: 0 0 15px white;
+}
+
 .container{
     margin-left: 22%;
     margin-top: 15%;
@@ -195,6 +210,10 @@ transition: all 0.5s ease;
     .navbar{
         display: block;
         text-align: right;
+    }
+
+    .profile-img{
+        margin-bottom: 0%;
     }
 
     .container{
