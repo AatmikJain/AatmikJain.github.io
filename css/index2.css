@@ -47,7 +47,56 @@ b{
 
 #name{
     font-size: 600%;
+    padding: 0px;
+    margin: 0px;
 }
+
+.contact{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* linkedin */
+.contact li:hover .fa-linkedin {
+    color: #2867B2;
+    text-shadow: 0 0 15px #2867B2;
+    transition: all 0.5s ease;
+    }
+      
+    /* github */
+    .contact li:hover .fa-github {
+    color: white;
+    text-shadow: 0 0 15px white;
+    transition: all 0.5s ease;
+    }
+    
+    /* instagram */  
+    .contact li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+    }
+    
+    /* twitter */
+    .contact li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+    }
+    
+    /* mail */
+    .contact li:hover .fa-envelope {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+    }
+    
+    /*resume*/
+    .contact li:hover .fa-address-card {
+    color: gray;
+    text-shadow: 0 0 15px gray;
+    transition: all 0.5s ease;
+    }    
 
 .about p{
     margin-top: 5%;
@@ -156,49 +205,7 @@ b{
     opacity: 1;
 }
 
-/* linkedin */
-.contact li:hover .fa-linkedin {
-color: #2867B2;
-text-shadow: 0 0 15px #2867B2;
-transition: all 0.5s ease;
-}
-  
-/* github */
-.contact li:hover .fa-github {
-color: black;
-text-shadow: 0 0 15px black;
-transition: all 0.5s ease;
-}
-
-/* instagram */  
-.contact li:hover .fa-instagram {
-color: #bc2a8d;
-text-shadow: 0 0 15px #bc2a8d;
-transition: all 0.5s ease;
-}
-
-/* twitter */
-.contact li:hover .fa-twitter {
-color: #00aced;
-text-shadow: 0 0 15px #00aced;
-transition: all 0.5s ease;
-}
-
-/* mail */
-.contact li:hover .fa-envelope {
-color: #dd4b39;
-text-shadow: 0 0 15px #dd4b39;
-transition: all 0.5s ease;
-}
-
-/*resume*/
-.contact li:hover .fa-address-card {
-color: gray;
-text-shadow: 0 0 15px gray;
-transition: all 0.5s ease;
-}
-
-@media screen and (max-width: 600px){
+@media screen and (max-width: 684px){
     body{
         text-align: center;
     }
@@ -213,12 +220,22 @@ transition: all 0.5s ease;
     }
 
     .profile-img{
-        margin-bottom: 0%;
+        transform: scale(0.7);
+        margin-top: -10%;
+        margin-bottom: -10%;
     }
 
     .container{
         margin-left: 0%;
         margin-top: 0%;
+    }
+
+    #name{
+        font-size: 500%;
+    }
+
+    .contact{
+        margin: 0 auto;
     }
 
     .education {
