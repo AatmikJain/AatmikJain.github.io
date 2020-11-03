@@ -9,6 +9,10 @@ a{
     text-decoration: none;
 }
 
+b{
+    font-size: 105%;
+}
+
 #sidebar a{
     padding: 1%;
 }
@@ -60,6 +64,27 @@ a{
 
 .branch, .institute{
     color: lightgray;
+}
+
+.skill-category{
+    color: rgb(241, 220, 173);
+}
+
+.skill-sub-category{
+    font-weight: lighter;
+    color: rgb(241, 220, 173);
+}
+
+.proficient{
+    color: white;
+}
+
+.intermediate{
+    color: rgb(182, 181, 181);
+}
+
+.beginner{
+    color: gray;
 }
 
 .experience{
