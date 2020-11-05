@@ -42,7 +42,6 @@
         <!--Content-->
         <div class="container w3-rest">
 
-
             <div class="about w3-container">
                 <a name="about"></a>
                 <h1 id="name">Aatmik <span class="jain" style="color: yellow">Jain</span></h1>
@@ -122,7 +121,7 @@
             
             <hr style="margin-left: 2%; margin-right: 4%;">
 
-            <div class="education w3-container">
+            <div class="skills w3-container">
                 <a name="skills"></a>
                 <div class="subhead">
                     <h1>Skills</h1>
@@ -140,6 +139,31 @@
                     <li><b class="skill-category">Data Science:</b> <span class="beginner">Machine Learning, Data Visualization</span> </li>
                     <li><b class="skill-category">Soft Skills:</b> <span class="proficient">Teamwork, Leadership, Management,</span> <span class="intermediate">Public Speaking</span></li>
                 </ul>
+                <!-- <h5 class="w3-container w3-cell w3-cell-middle w3-mobile" style="white-space: nowrap;">View Coding Profiles</h5> -->
+                <div class="w3-container w3-cell w3-mobile">
+                    <ul class="w3-bar coding-list" style="width: fit-content;">
+                        <li class="w3-bar-item">
+                            <a href="https://www.hackerrank.com/aatmikjain?hr_r=1" target="_blank">
+                                <img src="img/hackerrank.png" class="coding-icon" title="HackerRank">
+                            </a>
+                        </li>
+                        <li class="w3-bar-item">
+                            <a href="https://leetcode.com/aatmikjain/" target="_blank">
+                                <img src="img/leetcode.png" class="coding-icon" title="Leetcode">
+                            </a>
+                        </li>
+                        <li class="w3-bar-item">
+                            <a href="https://auth.geeksforgeeks.org/user/aatmikjain/practice/" target="_blank">
+                                <img src="img/geeksforgeeks.png" class="coding-icon" title="GeeksforGeeks">
+                            </a>
+                        </li>
+                        <li class="w3-bar-item">
+                            <a href="https://www.codechef.com/users/aatmikjain" target="_blank">
+                                <img src="img/codechef.png" class="coding-icon" title="CodeChef">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
 
             <hr style="margin-left: 2%; margin-right: 4%;">
@@ -150,7 +174,7 @@
                     <h1>Experience</h1>
                 </div>
                 <div class="w3-cell-row">
-                    <div class="w3-cell w3-mobile">
+                    <div class="w3-cell w3-mobile" style="width: 65%;">
                         <div class="w3-bar-block">
                             <div class="w3-bar-item" style="text-align: right;"><i class="fas fa-chevron-left" style="color:rgb(98, 240, 98)"></i> Technical</div>
                             <div class="w3-bar-item w3-hover-shadow experience-box">
@@ -349,31 +373,27 @@
             <hr style="margin-left: 2%; margin-right: 4%;">
             <p style="text-align: center;">contact me at: <a href="mailto: aatmikjain1803@gmail.com" target="_blank">aatmikjain1803@gmail.com</a></p>
         </div>
-
-
-        <script>
-            function myFunction() {
-              var x = document.getElementById("demo");
-              if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-              } else { 
-                x.className = x.className.replace(" w3-show", "");
-              }
-            }
-
-            window.addEventListener('scroll', function(){
-                var scroll = document.querySelector('.scrollTop');
-                scroll.classList.toggle("activeTop", window.scrollY>600)
-            });
-        </script>
     </body>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("demo");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+
+        window.addEventListener('scroll', function(){
+            var scroll = document.querySelector('.scrollTop');
+            scroll.classList.toggle("activeTop", window.scrollY>600)
+        });
+    </script>
 </html>
 
 
 <!--To Do:
-animation to social icons
-go to top button
 color of description
 Extracurricular
-Competitive coding profiles
+Black belt certificate
 -->

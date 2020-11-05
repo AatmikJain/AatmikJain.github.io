@@ -151,6 +151,21 @@ b{
     color: gray;
 }
 
+.coding-list{
+    padding: 0;
+    margin: 0;
+}
+
+.coding-icon{
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.coding-icon:hover{
+    transform: scale(1.1);
+}
+
 .experience{
     width: 97%;
 }
@@ -160,7 +175,7 @@ b{
 }
 
 .experience-box:hover{
-    -webkit-transform: scale(1.03);
+    /* -webkit-transform: scale(1.03); */
 }
 
 .post{
@@ -248,5 +263,9 @@ b{
 
     .multiyear{
         white-space: normal;
+    }
+
+    .coding-list{
+        margin: 0 auto;
     }
 }
