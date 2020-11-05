@@ -21,7 +21,16 @@ b{
     display: none;
 }
 
-.navbar-list{
+#navbar-button{
+    padding-right: 2%;
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#navbar-list{
     display: none;
 }
 
@@ -130,6 +139,19 @@ b{
     color: lightgray;
 }
 
+.skills{
+    text-align: left;
+}
+
+.skills ul{
+    list-style: none;
+    padding: 0%;
+}
+
+.skills ul li{
+    padding-top: 0.5%;
+}
+
 .skill-category{
     color: rgb(241, 220, 173);
 }
@@ -157,7 +179,7 @@ b{
 }
 
 .coding-icon{
-    height: 75px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -170,6 +192,10 @@ b{
     width: 97%;
 }
 
+.experience-cell{
+    width: 65%;
+}
+
 .experience-box{
     margin-top: 3%;
 }
@@ -178,17 +204,28 @@ b{
     /* -webkit-transform: scale(1.03); */
 }
 
-.post{
-    color: lightgray;
+.company-icon{
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.company{
+    font-size: 150%;
 }
 
 .description{
     text-align: justify;
+    color: lightgray
 }
 
 .social-work{
     text-align: left;
     width: 96%;
+}
+
+.social-name{
+    font-size: 150%;
 }
 
 .award{
@@ -255,6 +292,10 @@ b{
 
     .education {
         width: 97%;
+    }
+
+    .experience-cell{
+        width: 50%;
     }
 
     .social-work{

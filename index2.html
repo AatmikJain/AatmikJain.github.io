@@ -24,8 +24,8 @@
             </div>
         </div>
         <div class="navbar">
-            <div class="w3-xlarge" onclick="myFunction()" style="padding-right: 2%;">☰</div><!--☰ = &#9776;-->
-            <div id="demo" class="w3-bar-block navbar-list">
+            <button class="w3-xlarge" id="navbar-button" onclick="toggleNavigation()">☰</button><!--☰ = &#9776;-->
+            <div id="navbar-list" class="w3-bar-block">
                 <a href="#about" class="w3-bar-item button w3-center">About</a>
                 <a href="#education" class="w3-bar-item button w3-center">Education</a>
                 <a href="#skills" class="w3-bar-item button w3-center">Skills</a>
@@ -83,7 +83,7 @@
                 </p>
             </div>
 
-            <hr style="margin-left: 2%; margin-right: 4%;">
+            <hr style="margin-left: 1%; margin-right: 4%;">
             
             <!--percentage/cgpa to be added?-->
             <div class="education w3-container">
@@ -119,7 +119,7 @@
                 </div>
             </div>
             
-            <hr style="margin-left: 2%; margin-right: 4%;">
+            <hr style="margin-left: 1%; margin-right: 4%;">
 
             <div class="skills w3-container">
                 <a name="skills"></a>
@@ -132,41 +132,38 @@
                     <li>
                         <b class="skill-category">Development:</b> <span class="proficient">Object Oriented Programming,</span> <span class="intermediate">Software Engineering, Android,</span> <span class="beginner">Microservices</span>
                         <ul>
-                            <li><b class="skill-sub-category">Database:</b> <span class="proficient">Database Management Systems, MySQL,</span> <span class="intermediate">Firebase</span></li>
-                            <li><b class="skill-sub-category">Front-end:</b> <span class="proficient">HTML, <span class="intermediate">CSS, W3.CSS</span></li>
+                            <li><b class="skill-sub-category">&emsp;&emsp;Database:</b> <span class="proficient">Database Management Systems, MySQL,</span> <span class="intermediate">Firebase</span></li>
+                            <li><b class="skill-sub-category">&emsp;&emsp;Front-end:</b> <span class="proficient">HTML, <span class="intermediate">CSS, W3.CSS</span></li>
                         </ul>
                     </li>
                     <li><b class="skill-category">Data Science:</b> <span class="beginner">Machine Learning, Data Visualization</span> </li>
                     <li><b class="skill-category">Soft Skills:</b> <span class="proficient">Teamwork, Leadership, Management,</span> <span class="intermediate">Public Speaking</span></li>
                 </ul>
-                <!-- <h5 class="w3-container w3-cell w3-cell-middle w3-mobile" style="white-space: nowrap;">View Coding Profiles</h5> -->
-                <div class="w3-container w3-cell w3-mobile">
-                    <ul class="w3-bar coding-list" style="width: fit-content;">
-                        <li class="w3-bar-item">
-                            <a href="https://www.hackerrank.com/aatmikjain?hr_r=1" target="_blank">
-                                <img src="img/hackerrank.png" class="coding-icon" title="HackerRank">
-                            </a>
-                        </li>
-                        <li class="w3-bar-item">
-                            <a href="https://leetcode.com/aatmikjain/" target="_blank">
-                                <img src="img/leetcode.png" class="coding-icon" title="Leetcode">
-                            </a>
-                        </li>
-                        <li class="w3-bar-item">
-                            <a href="https://auth.geeksforgeeks.org/user/aatmikjain/practice/" target="_blank">
-                                <img src="img/geeksforgeeks.png" class="coding-icon" title="GeeksforGeeks">
-                            </a>
-                        </li>
-                        <li class="w3-bar-item">
-                            <a href="https://www.codechef.com/users/aatmikjain" target="_blank">
-                                <img src="img/codechef.png" class="coding-icon" title="CodeChef">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="w3-bar coding-list" style="width: fit-content;">
+                    <li class="w3-bar-item">
+                        <a href="https://www.hackerrank.com/aatmikjain?hr_r=1" target="_blank">
+                            <img src="img/hackerrank.png" class="coding-icon" title="HackerRank">
+                        </a>
+                    </li>
+                    <li class="w3-bar-item">
+                        <a href="https://leetcode.com/aatmikjain/" target="_blank">
+                            <img src="img/leetcode.png" class="coding-icon" title="Leetcode">
+                        </a>
+                    </li>
+                    <li class="w3-bar-item">
+                        <a href="https://auth.geeksforgeeks.org/user/aatmikjain/practice/" target="_blank">
+                            <img src="img/geeksforgeeks.png" class="coding-icon" title="GeeksforGeeks">
+                        </a>
+                    </li>
+                    <li class="w3-bar-item">
+                        <a href="https://www.codechef.com/users/aatmikjain" target="_blank">
+                            <img src="img/codechef.png" class="coding-icon" title="CodeChef">
+                        </a>
+                    </li>
+                </ul>
             </div>
 
-            <hr style="margin-left: 2%; margin-right: 4%;">
+            <hr style="margin-left: 1%; margin-right: 4%;">
             
             <div class="experience w3-container">
                 <a name="experience"></a>
@@ -174,12 +171,12 @@
                     <h1>Experience</h1>
                 </div>
                 <div class="w3-cell-row">
-                    <div class="w3-cell w3-mobile" style="width: 65%;">
+                    <div class="w3-cell w3-mobile experience-cell">
                         <div class="w3-bar-block">
                             <div class="w3-bar-item" style="text-align: right;"><i class="fas fa-chevron-left" style="color:rgb(98, 240, 98)"></i> Technical</div>
                             <div class="w3-bar-item w3-hover-shadow experience-box">
                                 <div class="subhead company">
-                                    <a href="https://codefostergs.github.io/Website/" target="_blank">CodeFoster Club, SGSITS</a>
+                                    <a href="https://codefostergs.github.io/Website/" target="_blank"><img src="img/codefoster.png" class="company-icon"> CodeFoster Club, SGSITS</a>
                                 </div>
                                 <div class="post">
                                     <ul>
@@ -195,7 +192,7 @@
         
                             <div class="w3-bar-item w3-hover-shadow experience-box">
                                 <div class="subhead company">
-                                    <a href="http://aaiway.com/" target="_blank">AAIWay</a>
+                                    <a href="http://aaiway.com/" target="_blank"><img src="img/aaiway.png" class="company-icon"> AAIWay</a>
                                 </div>
                                 <div class="post">
                                     Web and Android Developer Intern
@@ -231,7 +228,7 @@
                             <div class="w3-bar-item">Non-Technical / Campus Ambassador Programs <i class="fas fa-chevron-right" style="color:rgb(98, 240, 98)"></i></div>
                             <div class="w3-bar-item w3-hover-shadow experience-box">
                                 <div class="subhead company">
-                                    <a href="https://www.scaler.com/" target="_blank">Scaler Academy</a>
+                                    <a href="https://www.scaler.com/" target="_blank"><img src="img/scalerAcademy.png" class="company-icon"> Scaler Academy</a>
                                 </div>
                                 <div class="post">
                                     Campus Lead: Scaler Achiever Club
@@ -248,7 +245,7 @@
         
                             <div class="w3-bar-item w3-hover-shadow experience-box">
                                 <div class="subhead company">
-                                    <a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a>
+                                    <a href="https://www.geeksforgeeks.org/" target="_blank"><img src="img/geeksforgeeks.png" class="company-icon"> GeeksforGeeks</a>
                                 </div>
                                 <div class="post">
                                     Campus Ambassador
@@ -259,7 +256,7 @@
         
                             <div class="w3-bar-item w3-hover-shadow experience-box">
                                 <div class="subhead company">
-                                    <a href="https://internshala.com/" target="_blank">Internshala</a>
+                                    <a href="https://internshala.com/" target="_blank"><img src="img/internshala.jpg" class="company-icon"> Internshala</a>
                                 </div>
                                 <div class="post">
                                     Student Partner 10 & 11
@@ -272,7 +269,7 @@
                 </div>
             </div>
 
-            <hr style="margin-left: 2%; margin-right: 4%;">
+            <hr style="margin-left: 1%; margin-right: 4%;">
 
             <div class="social-work w3-container">
                 <a name="social-work"></a>
@@ -281,14 +278,14 @@
                 </div>
                 <div class="w3-hover-shadow social-work-box w3-cell-row">
                     <div class="w3-cell w3-rest" style="padding-right: 5%;">
-                        <a href="https://hourofcode.com/" target="_blank">Hour Of Code</a>
+                        <a href="https://hourofcode.com/" target="_blank" class="social-name">Hour Of Code</a>
                         <div class="description">Successfully pitched about the campaign to various school authorities and conducted sessions to introduce and promote Computer Science education to students of secondary classes. Hour of Code is a global non-profit campaign that aims to demystify 'code', to show that anybody can learn the basics, and to broaden participation in the field of computer science.</div>
                     </div>
                     <div class="date w3-cell multiyear">2018, 2019</div>
                 </div>
             </div>
 
-            <hr style="margin-left: 2%; margin-right: 4%;">
+            <hr style="margin-left: 1%; margin-right: 4%;">
             
             <div class="award w3-container">
                 <a name="award"></a>
@@ -298,62 +295,62 @@
                 <ul>
                     <li><a href="https://drive.google.com/file/d/1AihSnCk_0WyVUtBcgojzFZDZd1hGkYj8/view?usp=sharing" target="_blank">
                         <div class="w3-cell-row">
-                            <div class="w3-cell w3-rest" style="padding-right: 5%;"><b>Third Winner</b> in Imagine Virtual Hackathon 2020 organised by Principal Global Services</div>
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;"><b>Third Winner</b><span class="description"> in Imagine Virtual Hackathon 2020 organised by Principal Global Services</span></div>
                             <div class="w3-cell date">Jul' 20</div>
                         </div>
                     </a></li>
                     <li>
                         <div class="w3-cell-row">
-                            <div class="w3-cell w3-rest" style="padding-right: 5%;"><b>Winner</b> in Codiction, a dual round coding contest (city level)</div>
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;"><b>Winner</b><span class="description"> in Codiction, a dual round coding contest (city level)</span></div>
                             <div class="w3-cell date">Mar' 20</div>
                         </div>
                     </li>
                     <li><a href="https://drive.google.com/file/d/1lfYG3wCxYBXceSY6exM8UlNJAOtWl8yS/view?usp=sharing" target="_blank">
                         <div class="w3-cell-row">
-                            <div class="w3-cell w3-rest" style="padding-right: 5%;"><b>Second Runner-up</b> in HackIndore 2.0, a 24 hour nationwide Hackathon</div>
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;"><b>Second Runner-up</b><span class="description"> in HackIndore 2.0, a 24 hour nationwide Hackathon</span></div>
                             <div class="w3-cell date">Oct' 19</div>
-                        </div>
-                    </a></li>
-                    <li><a href="https://drive.google.com/file/d/1geQu45S1iYgztesVHSDzaPkZOJLd6v6P/view?usp=sharing" target="_blank">
-                        <div class="w3-cell-row">
-                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Being part of a team, solved 7/8 puzzles in CS50 Puzzle Day, organized by Harvard and Yale universities</div>
-                            <div class="w3-cell date">Sept' 20</div>
                         </div>
                     </a></li>
                     <li><a href="https://drive.google.com/file/d/1kECvG2b1Pg_R6U4fURs13PzQAPNH8fRe/view?usp=sharing" target="_blank">
                         <div class="w3-cell-row">
-                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Java - HackerRank</div>
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Java<span class="description"> - HackerRank</span></div>
                             <div class="w3-cell date">Jul' 20</div>
                         </div>
                     </a></li>
                     <li><a href="https://drive.google.com/file/d/1a5qutRu72Y0tiEkkF5lqqHSwGkIv_5i_/view?usp=sharing" target="_blank">
                         <div class="w3-cell-row">
-                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Problem Solving (Intermediate) - HackerRank</div>
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Problem Solving (Intermediate)<span class="description"> - HackerRank</span></div>
                             <div class="w3-cell date">Jul' 20</div>
                         </div>
                     </a></li>
                     <li><a href="https://drive.google.com/file/d/1wvwiw5ZNi_hosUl8vj1tmepLy4mVnUVd/view?usp=sharing" target="_blank">
                         <div class="w3-cell-row">
-                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Machine Learning with Python - IBM (Coursera)</div>
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Machine Learning with Python<span class="description"> - IBM (Coursera)</span></div>
                             <div class="w3-cell date">May' 20</div>
                         </div>
                     </a></li>
                     <li><a href="https://drive.google.com/file/d/18Izdy2saQ93AXVpxIZJenaCgiA6DD7rS/view?usp=sharing" target="_blank">
                         <div class="w3-cell-row">
-                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Algorithms on Strings - University of California San Diego (Coursera)</div>
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Algorithms on Strings<span class="description"> - University of California San Diego (Coursera)</span></div>
                             <div class="w3-cell date">May' 20</div>
                         </div>
                     </a></li>
                     <li><a href="https://drive.google.com/file/d/1UjpmE3jStu28NbyTEBnQaQNUZPr9UImW/view?usp=sharing" target="_blank">
                         <div class="w3-cell-row">
-                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Data Visualization - Kaggle</div>
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Data Visualization<span class="description"> - Kaggle</span></div>
                             <div class="w3-cell date">May' 20</div>
                         </div>
                     </a></li>
                     <li><a href="https://drive.google.com/file/d/1w7HkLHC1oSrEzod5-4_MgeEnPCjKzMlU/view?usp=sharing" target="_blank">
                         <div class="w3-cell-row">
-                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Intermediate Machine Learning Python - Kaggle</div>
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Intermediate Machine Learning Python<span class="description"> - Kaggle</span></div>
                             <div class="w3-cell date">May' 20</div>
+                        </div>
+                    </a></li>
+                    <li><a href="https://drive.google.com/file/d/1geQu45S1iYgztesVHSDzaPkZOJLd6v6P/view?usp=sharing" target="_blank">
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Being part of a team, solved 7/8 puzzles in CS50 Puzzle Day,<span class="description"> organized by Harvard and Yale universities</span></div>
+                            <div class="w3-cell date">Sept' 20</div>
                         </div>
                     </a></li>
                     <li>
@@ -370,13 +367,13 @@
                 </ul>
             </div>
 
-            <hr style="margin-left: 2%; margin-right: 4%;">
+            <hr style="margin-left: 1%; margin-right: 4%;">
             <p style="text-align: center;">contact me at: <a href="mailto: aatmikjain1803@gmail.com" target="_blank">aatmikjain1803@gmail.com</a></p>
         </div>
     </body>
     <script>
-        function myFunction() {
-          var x = document.getElementById("demo");
+        function toggleNavigation() {
+          var x = document.getElementById("navbar-list");
           if (x.className.indexOf("w3-show") == -1) {
             x.className += " w3-show";
           } else { 
