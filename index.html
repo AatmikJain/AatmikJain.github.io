@@ -2,352 +2,395 @@
 <html>
     <head>
         <title>Aatmik Jain</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-        <link rel = "stylesheet" type="text/css" href="css/index.css">
-        <link rel = "stylesheet" type="text/css" href="css/styles.css">
-        <link rel = "stylesheet" type="text/css" href="css/header.css">
+        <link rel = "stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel = "icon" type="image/jpg" href="img/AJ.png">
-        <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
-        <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel = "stylesheet" type="text/css" href="css/index.css">
+        <link rel = "stylesheet" type="text/css" href="css/w3.css">
+        <link rel = "stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
-        <div class="loader-wrapper">
-            <span class="loader"><span class="loader-inner"></span></span>
-        </div>
         <a name="top"></a>
-        <nav>
-            <div class="toggle">
-                <p class="blinking-text">Looking for Software Developer/Analyst jobs starting from June 2021</p>
-                <br>
-                <i class="fa fa-bars fa-2x bars" aria-hidden="true"></i>
+        <!--Navigation-->
+        <div class="w3-row">
+            <div class="w3-col w3-sidebar w3-black w3-bar-block" id="sidebar" style="width:20%; position: relative;">
+                <div style="position: absolute; top: 50%; -ms-transform: translateY(-50%); transform: translateY(-50%);">
+                <img src="img/AatmikJain.jpg" class="w3-image w3-circle profile-img ">
+                <a href="#about" class="w3-bar-item w3-center button w3-large">About</a>
+                <a href="#education" class="w3-bar-item button w3-center w3-large">Education</a>
+                <a href="#skills" class="w3-bar-item button w3-center w3-large">Skills</a>
+                <a href="#experience" class="w3-bar-item button w3-center w3-large">Experience</a>
+                <a href="#social-work" class="w3-bar-item button w3-center w3-large">Social Work</a>
+                <a href="#award" class="w3-bar-item button w3-center w3-large">Achievements, Awards and Certificates</a>
             </div>
-            <ul class = "menu-list">
-                <li class="menu-item blinking-text" style="float: left; font-size: 1.5vw;">Looking for Software Developer/Analyst jobs starting from June 2021</li>
-                <li class = "menu-item">
-                    <a href = "#about">About Me</a>
-                </li>
-                <li class = "menu-item">
-                    <a href="#education">Education</a>
-                </li>
-                <li class = "menu-item">
-                    <a href="#skills">Skills</a>
-                </li>
-                <li class = "menu-item">
-                    <a href="#exp">Experience</a>
-                </li>
-                <li class = "menu-item">
-                    <a href = "#codingProfiles">Coding Profiles</a>
-                </li>
-            </ul>
-        </nav>
+        </div>
+        <div class="navbar">
+            <button class="w3-xlarge" id="navbar-button" onclick="toggleNavigation()">☰</button><!--☰ = &#9776;-->
+            <div id="navbar-list" class="w3-bar-block">
+                <a href="#about" class="w3-bar-item button w3-center">About</a>
+                <a href="#education" class="w3-bar-item button w3-center">Education</a>
+                <a href="#skills" class="w3-bar-item button w3-center">Skills</a>
+                <a href="#experience" class="w3-bar-item button w3-center">Experience</a>
+                <a href="#social-work" class="w3-bar-item button w3-center">Social Work</a>
+                <a href="#award" class="w3-bar-item button w3-center">Achievements, Awards and Certificates</a>
+            </div>
+            <img src="img/AatmikJain.jpg" class="w3-image w3-circle profile-img ">
+        </div>
+
+        <!--button to top-->
         <div class="scrollTop"><a href="#top"><i class="fas fa-chevron-circle-up fa-3x"></i></a></div>
-        <main class = "container">
-            <div class="about-container">
-                <div id="about-row1">
-                    <div class = "profileImage">
-                        <img id = "profileImage" src="img/AatmikJain.jpg" alt="Profile Picture">
-                    </div>
-                    <div class = "details">
-                        <h1>
-                            Aatmik <span class="jain">Jain</span>
-                        </h1>
-                        <h3>
-                            Computer Science Senior (B. Tech., IV year)
-                        </h3>
-                        <h2>
-                            <span class="tagline">Learner.&emsp;<span class="leader">Leader.&emsp;</span>Coder.
-                        </h2>
-                    </div>
-                    <div class="contact" data-aos="fade-up">
-                        <ul>
-                            <li>
-                                <a href="https://www.linkedin.com/in/aatmik-jain/" target="_blank">
-                                    <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/AatmikJain" target="_blank">
-                                    <i class="fab fa-github fa-2x" title="GitHub"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://www.instagram.com/aatmik_jain/" target="_blank">
-                                    <i class="fab fa-instagram fa-2x" title="Instagram"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/aatmikjainn" target="_blank">
-                                    <i class="fab fa-twitter fa-2x" title="Twitter"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="mailto:aatmikjain1803@gmail.com" target="_blank">
-                                    <i class="fa fa-envelope fa-2x" title="Mail"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="https://drive.google.com/file/d/1yJWKAtZ2hSzKdDBg8iZC9oj4TlRgEHgU/view?usp=sharing" target="_blank">
-                                    <i class="fas fa-address-card fa-2x" title="Resume/CV"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+
+        <!--Content-->
+        <div class="container w3-rest">
+
+            <div class="about w3-container">
                 <a name="about"></a>
-                <div id="about-row2" data-aos="fade-up">
-                    <p>
-                        I am currently pursuing Bachelor of Technology in Computer Science at Shri GS Institute of Technology and Science, Indore. I love to code, explore and learn various technologies and collaborate with people on works of similar interest. Moreover, I have a penchant for competitive programming and I regularly participate in coding competitions.
-                    </p>
-                </div>
+                <h1 id="name">Aatmik <span class="jain" style="color: yellow">Jain</span></h1>
+                <ul class="w3-bar contact" style="width: fit-content;">
+                    <li class="w3-bar-item">
+                        <a href="https://www.linkedin.com/in/aatmik-jain/" target="_blank">
+                            <i class="fab fa-linkedin fa-2x" title="LinkedIn"></i>
+                        </a>
+                    </li>
+                    <li class="w3-bar-item">
+                        <a href="https://github.com/AatmikJain" target="_blank">
+                            <i class="fab fa-github fa-2x" title="GitHub"></i>
+                        </a>
+                    </li>
+                    <li class="w3-bar-item">
+                        <a href="https://www.instagram.com/aatmik_jain/" target="_blank">
+                            <i class="fab fa-instagram fa-2x" title="Instagram"></i>
+                        </a>
+                    </li>
+                    <li class="w3-bar-item">
+                        <a href="https://twitter.com/aatmikjainn" target="_blank">
+                            <i class="fab fa-twitter fa-2x" title="Twitter"></i>
+                        </a>
+                    </li>
+                    <li class="w3-bar-item">
+                        <a href="mailto:aatmikjain1803@gmail.com" target="_blank">
+                            <i class="fa fa-envelope fa-2x" title="Mail"></i>
+                        </a>
+                    </li>
+                    <li class="w3-bar-item">
+                        <a href="https://drive.google.com/file/d/1yJWKAtZ2hSzKdDBg8iZC9oj4TlRgEHgU/view?usp=sharing" target="_blank">
+                            <i class="fas fa-address-card fa-2x" title="Resume/CV"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <p>
+                    Final year student, pursuing Bachelor of Technology in Computer Science. I do competitive coding and explore Data Science concepts. I enjoy collaborating with people on works of similar interest. Apart from technical interests, I make portraits, read novels, play Chess, Taekwondo and Cricket.
+                </p>
             </div>
 
-            <div class="owl-carousel owl-theme"  data-aos="fade-up">
-          
-                <div class="item"><a href="https://drive.google.com/file/d/1qHmOQEjlkOHAmOMiba7Pj5ZDLRrmBwFz/view?usp=sharing" target="_blank"><img src="img/Aatmik_Jain_Google_Kickstart_Round_B_2019.png" alt="Aatmik_Jain_Google_Kickstart_Round_B_2019" title="Google_Kickstart_Round_B_2019"></a></div>
-                <div class="item"><a href="https://drive.google.com/file/d/1J7ovDqB3X8dM1x6NXreyZg2hKjJTTkmu/view?usp=sharing" target="_blank"><img src="img/Aatmik_Jain_CodeChef_Feb_Lunchtime_2019.png" alt="Aatmik_Jain_CodeChef_February_Lunchtime_2019" title="CodeChef_February_Lunchtime_2019"></a></div>
-                <div class="item"><a href="https://drive.google.com/file/d/1nE2v5VhifQ6bTKVzaEhFLFJzhTQZ4gd9/view?usp=sharing" target="_blank"><img src="img/Aatmik_Jain_Codefoster_Orientation_1st_year_2019(1).jpg" alt="Aatmik_Jain_Codefoster_Orientation_1st_year_2019" title="Codefoster_Orientation_1st_year_2019"></a></div>
-                <div class="item"><a href="https://drive.google.com/file/d/1ckUtpevFbPKaAgoUFd49DCEtZka61dfL/view?usp=sharing" target="_blank"><img src="img/Aatmik_Jain_Codefoster_Orientation_1st_year_20190911_183706.jpg" alt="Aatmik_Jain_Codefoster_Orientation_1st_year_2019" title="Codefoster_Orientation_1st_year_2019"></a></div>
-                <div class="item"><a href="https://drive.google.com/file/d/1N7hB_V-OqbpYSqwBe7zkAqssBOPf2th2/view?usp=sharing" target="_blank"><img src="img/Aatmik_Jain_codefoster_Orientation_2nd_year_2019.jpg" alt="Aatmik_Jain_codefoster_Orientation_2nd_year_2019" title="Codefoster_Orientation_2nd_year_2019"></a></div>
-                <div class="item"><a href="https://drive.google.com/file/d/153SPi-WOchyrC6xntYZWBJMaX0L-3K_9/view?usp=sharing" target="_blank"><img src="img/Aatmik_Jain_HackIndore2_Prize.jpg" alt="Aatmik_Jain_HackIndore2_Prize_2nd_RunnerUp" title="HackIndore2_Prize_2nd_RunnerUp"></a></div>
-                <div class="item"><a href="https://drive.google.com/file/d/1BdepcPImSCoM_766yPlJnd3220i5FwRk/view?usp=sharing" target="_blank"><img src="img/Aatmik_Jain_Codiction_Prize.jpg" alt="Aatmik_Jain_Codiction_Prize_Winner" title="Codiction_Prize_Winner"></a></div>
-                <div class="item"><a href="https://www.hackerrank.com/AatmikJain" target="_blank"><img src="img/Aatmik_Jain_HackerRank_Profile.png" alt="Aatmik_Jain_HackerRank_Profile" title="HackerRank_Profile"></a></div>
-                <div class="item"><a href="https://leetcode.com/aatmikjain/" target="_blank"><img src="img/Aatmik_Jain_LeetCode_Profile.png" alt="Aatmik_Jain_LeetCode_Profile" title="LeetCode_Profile"></a></div>
-                <div class="item"><a href="https://www.codechef.com/users/aatmikjain" target="_blank"><img src="img/Aatmik_Jain_CodeChef_Profile.png" alt="Aatmik_Jain_CodeChef_Profile" title="CodeChef_Profile"></a></div>
-            </div>
-
-            <div class="edu-skill">
+            <hr style="margin-left: 1%; margin-right: 4%;">
+            
+            <!--percentage/cgpa to be added?-->
+            <div class="education w3-container">
                 <a name="education"></a>
-                <div class="education-container" data-aos="fade-up">
-                    <p class="heading">Education</p>
-                    <ul class="fa-ul">
-                        <li>
-                            <i class="fa-li fas fa-graduation-cap"></i>
-                            <div>
-                                <p class="course"> B.Tech. in Computer Science, 2021</p>
-                                <p class="institute"> SGSITS, Indore</p>
-                            </div>
-                        </li>
-                        
-                        <li>
-                            <i class="fa-li fas fa-graduation-cap"></i>
-                            <div>
-                                <p class="course"> Higher Secondary School (class 12), 2017</p>
-                                <p class="subjects"> Physics, Chemistry, Mathematics, Informatics Practices</p>
-                                <p class="institute"> Delhi Public School Indore</p>
-                            </div>
-                        </li>
-                        
-                        <li>
-                            <i class="fa-li fas fa-graduation-cap"></i>
-                            <div>
-                                <p class="course"> Secondary School (class 10), 2015</p>
-                                <p class="institute"> Delhi Public School Indore</p>
-                            </div>
-                        </li>
-                        
-                    </ul>
+                <div class="subhead">
+                    <h1>Education</h1>
                 </div>
-                <a name="skills"></a>
-                <div class="skills-container" data-aos="fade-up">
-                    <p class="heading">Skills</p>
-                    <div id="skill-div-separator">
-                        <div id="skill-column1">
-                            <ul>
-                                <li>
-                                    <p class="skill-name">Data Structures</p>
-                                    <div class="progress-bar-container">
-                                        <div class="progress-bar" style="width: 80%;">&nbsp;</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="skill-name">Core Java</p>
-                                    <div class="progress-bar-container">
-                                        <div class="progress-bar" style="width: 80%;">&nbsp;</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="skill-name">Python</p>
-                                    <div class="progress-bar-container">
-                                        <div class="progress-bar" style="width: 40%;">&nbsp;</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="skill-name">Android</p>
-                                    <div class="progress-bar-container">
-                                        <div class="progress-bar" style="width: 50%;">&nbsp;</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div id="skill-column2">
-                            <ul>
-                                <li>
-                                    <p class="skill-name">Algorithms</p>
-                                    <div class="progress-bar-container">
-                                        <div class="progress-bar" style="width: 70%;">&nbsp;</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="skill-name">SQL</p>
-                                    <div class="progress-bar-container">
-                                        <div class="progress-bar" style="width: 75%;">&nbsp;</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="skill-name">GitHub</p>
-                                    <div class="progress-bar-container">
-                                        <div class="progress-bar" style="width: 40%;">&nbsp;</div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <p class="skill-name">HTML/CSS</p>
-                                    <div class="progress-bar-container">
-                                        <div class="progress-bar" style="width: 40%;">&nbsp;</div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="exp-container">
-                <a name="exp"></a>
-                <div class="workExp" data-aos="fade-up">
-                    <p class="heading">Work Experience</p>
 
-                    <div class="work-block">
-                        <ul class="fa-ul">
-                            <li>
-                                <i class="fa-li fas fa-briefcase fa-x" aria-hidden="true"> </i>
-                                <p class="job-title">Android Trainee</p>
-                                <p class="company"><a href="http://www.infoimpulse.com/" target="_blank">InfoImpulse Enterprise Solutions</a></p>
-                                <p class="duration">June 2019 - July 2019, Indore</p>
-                                <p class="description">Developed a Member Directory Application for the members of an organisation, where they can get notifications about important events and notices. Members can search past notifications and can maintain their profiles. Used Android Studio, Java and SQLite.</p>
-                            </li>
-                        </ul>
+                <div class="education-box w3-cell-row">
+                    <div class="w3-cell w3-rest">
+                        <div class="degree">Bachelor of Technology</div>
+                        <div class="branch">Computer Science</div>
+                        <div class="institute">Shri G.S. Institute of Technology and Science, Indore</div>
                     </div>
-                    <div class="work-block">
-                        <ul class="fa-ul">
-                            <li>
-                                <i class="fa-li fas fa-briefcase fa-x" aria-hidden="true"> </i>
-                                <p class="job-title">President</p>
-                                <p class="company"><a href="https://codefostergs.github.io/Website/" target="_blank">Club Codefoster</a></p>
-                                <p class="duration">February 2020 - Present, SGSITS, Indore</p>
-                            </li>
-                            <li>
-                                <p class="sub-job-title">Head of Open Source</p>
-                                <p class="company"><a href="https://codefostergs.github.io/Website/" target="_blank">Club Codefoster</a></p>
-                                <p class="duration">February 2019 - February 2020, SGSITS, Indore</p>
-                            </li>
-                            <li>
-                                <p class="sub-job-title">Coordinator</p>
-                                <p class="company"><a href="https://codefostergs.github.io/Website/" target="_blank">Club Codefoster</a></p>
-                                <p class="duration">February 2018 - February 2019, SGSITS, Indore</p>
-                            </li>
-                            <li>
-                                <br>
-                                <p class="description">I work with a group of 25 people to help enrich coding and development culture in the college.<br> Contact us at <a href="mailto:thecodefoster@gmail.com" target="_blank" style="text-decoration: underline;">thecodefoster@gmail.com</a></p>
-                            </li>
-                        </ul> 
-                    </div>
-                    <div class="work-block">
-                        <ul class="fa-ul">
-                            <li>
-                                <i class="fa-li fas fa-briefcase fa-x" aria-hidden="true"> </i>
-                                <p class="job-title">Campus Ambassador</p>
-                                <p class="company"><a href="https://www.geeksforgeeks.org/" target="_blank">GeeksforGeeks</a></p>
-                                <p class="duration">July 2018 - April 2019</p>
-                                <p class="description">Motivated students to write technical articles on Company’s website, practice problems and take courses for developing their skills.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="work-block">
-                        <ul class="fa-ul">
-                            <li>
-                                <i class="fa-li fas fa-briefcase fa-x" aria-hidden="true"> </i>
-                                <p class="job-title">Student Partner 10 | 11</p>
-                                <p class="company"><a href="https://internshala.com/" target="_blank">Internshala</a></p>
-                                <p class="duration">June 2018 - November 2018</p>
-                                <p class="description">Motivated students to look for internship on the company’s website and take required courses to enhance their skills.</p>
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="date w3-cell">2021</div>
                 </div>
-                <a name="codingProfiles"></a>
-                <div class="handles" data-aos="fade-up">
-                    <p class="heading">Check out my Coding Profiles!!</p>
-                    <ul>
-                        <li><a href="https://leetcode.com/aatmikjain" target="_blank">Leetcode</a></li>
-                        <li><a href="https://www.codechef.com/users/aatmikjain" target="_blank">CodeChef</a></li>
-                        <li><a href="http://codeforces.com/profile/AatmikJain" target="_blank">Codeforces</a></li>
-                        <li><a href="https://auth.geeksforgeeks.org/user/aatmikjain/profile" target="_blank">GeeksforGeeks</a></li>
-                        <li><a href="https://www.hackerrank.com/AatmikJain" target="_blank">HackerRank</a></li>
-                    </ul>
-                </div>
-            </div>
-        </main>
-        <br>
-        <hr>
-        <footer>
-            <p>Feel free to contact me at <a href="mailto:aatmikjain1803@gmail.com" target="_blank" style="text-decoration: underline;">aatmikjain1803@gmail.com</a></p>
-        </footer>
-        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-        <script src="OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
-        <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
-        <script src="OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-        <script>
-            $(window).on("load", function(){
-                $('.loader-wrapper').fadeOut('slow');
-            });
-            window.addEventListener('scroll', function(){
-                var scroll = document.querySelector('.scrollTop');
-                scroll.classList.toggle("activeTop", window.scrollY>500)
-            })
-            $(document).ready(function() {
-                $(".owl-carousel").owlCarousel({
-                    nav: true,
-                    navText: ["<i class='fas fa-angle-left'></i>", "<i class='fas fa-angle-right'></i>"],
-                    dots: true,
-                    dotsEach: true,
-                    center: true,
-                    items:1,
-                    loop:true,
-                    margin:10,
-                    autoplay:true,
-                    autoplayTimeout:4000,
-                    autoplaySpeed: 2000,
-                    autoplayHovePause: true,
-                    autoHeight: true,
-                    responsive:{
-                        1200: {
-                            items:1,
-                            margin: 5
-                        }
-                    }
-                });
-                $('.bars').click(function(){
-                    $('.menu-list').toggleClass('active');
-                });
                 
-                $('.owl-carousel .owl-item').on('mouseenter',function(e){
-                    $(this).closest('.owl-carousel').trigger('stop.owl.autoplay');
-                })
-                $('.owl-carousel .owl-item').on('mouseleave',function(e){
-                    $(this).closest('.owl-carousel').trigger('play.owl.autoplay',[3000]);
-                })
-                $(".owl-prev").hover(function(){
-                    $(this).css("background-color", "transparent");
-                });
-                $(".owl-next").hover(function(){
-                    $(this).css("background-color", "transparent");
-                });
+                <div class="education-box w3-cell-row">
+                    <div class="w3-cell w3-rest">
+                        <div class="degree">Higher Secondary Education</div>
+                        <div class="branch">Science, Mathematics, Informatics Practices</div>
+                        <div class="institute">Delhi Public School, Indore</div>
+                    </div>
+                    <div class="date w3-cell">2017</div>                        
+                </div>
 
-            });
-        </script>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init();
-        </script>
+                <div class="education-box w3-cell-row">
+                    <div class="w3-cell w3-rest">
+                        <div class="degree">Secondary Education</div>
+                        <div class="institute">Delhi Public School, Indore</div>
+                    </div>
+                    <div class="date w3-cell">2015</div>
+                </div>
+            </div>
+            
+            <hr style="margin-left: 1%; margin-right: 4%;">
+
+            <div class="skills w3-container">
+                <a name="skills"></a>
+                <div class="subhead">
+                    <h1>Skills</h1>
+                    <p><i><span class="proficient">Proficient</span>&emsp;<span class="intermediate">Intermediate</span>&emsp;<span class="beginner">Beginner</span></i></p>
+                </div>
+                <ul>
+                    <li><b class="skill-category">Programming:</b> <span class="proficient">Data Structures, Algorithm Design and Analysis, Core Java,</span><span class="intermediate"> Python,</span><span class="beginner"> C</span> </li>
+                    <li>
+                        <b class="skill-category">Development:</b> <span class="proficient">Object Oriented Programming,</span> <span class="intermediate">Software Engineering, Android,</span> <span class="beginner">Microservices</span>
+                        <ul>
+                            <li><b class="skill-sub-category">&emsp;&emsp;Database:</b> <span class="proficient">Database Management Systems, MySQL,</span> <span class="intermediate">Firebase</span></li>
+                            <li><b class="skill-sub-category">&emsp;&emsp;Front-end:</b> <span class="proficient">HTML, <span class="intermediate">CSS, W3.CSS</span></li>
+                        </ul>
+                    </li>
+                    <li><b class="skill-category">Data Science:</b> <span class="beginner">Machine Learning, Data Visualization</span> </li>
+                    <li><b class="skill-category">Soft Skills:</b> <span class="proficient">Teamwork, Leadership, Management,</span> <span class="intermediate">Public Speaking</span></li>
+                </ul>
+                <ul class="w3-bar coding-list" style="width: fit-content;">
+                    <li class="w3-bar-item">
+                        <a href="https://www.hackerrank.com/aatmikjain?hr_r=1" target="_blank">
+                            <img src="img/hackerrank.png" class="coding-icon" title="HackerRank">
+                        </a>
+                    </li>
+                    <li class="w3-bar-item">
+                        <a href="https://leetcode.com/aatmikjain/" target="_blank">
+                            <img src="img/leetcode.png" class="coding-icon" title="Leetcode">
+                        </a>
+                    </li>
+                    <li class="w3-bar-item">
+                        <a href="https://auth.geeksforgeeks.org/user/aatmikjain/practice/" target="_blank">
+                            <img src="img/geeksforgeeks.png" class="coding-icon" title="GeeksforGeeks">
+                        </a>
+                    </li>
+                    <li class="w3-bar-item">
+                        <a href="https://www.codechef.com/users/aatmikjain" target="_blank">
+                            <img src="img/codechef.png" class="coding-icon" title="CodeChef">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <hr style="margin-left: 1%; margin-right: 4%;">
+            
+            <div class="experience w3-container">
+                <a name="experience"></a>
+                <div class="subhead">
+                    <h1>Experience</h1>
+                </div>
+                <div class="w3-cell-row">
+                    <div class="w3-cell w3-mobile experience-cell">
+                        <div class="w3-bar-block">
+                            <div class="w3-bar-item" style="text-align: right;"><i class="fas fa-chevron-left" style="color:rgb(98, 240, 98)"></i> Technical</div>
+                            <div class="w3-bar-item w3-hover-shadow experience-box">
+                                <div class="subhead company">
+                                    <a href="https://codefostergs.github.io/Website/" target="_blank"><img src="img/codefoster.png" class="company-icon"> CodeFoster Club, SGSITS</a>
+                                </div>
+                                <div class="post">
+                                    <ul>
+                                        <li >President <span class="date" style="float: right;">Feb' 20 - Present</span></li>
+                                        <li>Head of Open Source<span class="date" style="float: right;">Feb' 19 - Feb'  20</span></li>
+                                        <li>Coordinator<span class="date" style="float: right;">Feb' 18 - Feb' 19</span></li>
+                                    </ul>
+                                </div>
+                                <div class="description">
+                                    Leading the team of 25 students, from various streams and years, to develop and enhance their skills by collaborating with each others. Conducted various orientation sessions for juniors and organised college and city level coding competitions. CodeFoster is the official coding club of the college, aimed at encouraging everyone to learn at least the basics of computer science. The club does not differentiate students based on their field of study.
+                                </div>
+                            </div>
+        
+                            <div class="w3-bar-item w3-hover-shadow experience-box">
+                                <div class="subhead company">
+                                    <a href="http://aaiway.com/" target="_blank"><img src="img/aaiway.png" class="company-icon"> AAIWay</a>
+                                </div>
+                                <div class="post">
+                                    Web and Android Developer Intern
+                                    <span class="date" style="float: right;">8 Jun' 20 - 7 Sept' 20</span>
+                                </div>
+                                <div class="description">
+                                    <ul>
+                                        <li>Reviewed and suggested features for company’s online Medical Management System</li>
+                                        <li>Developed an Android application which can interact with users and assist them in case of emergency (Alert system)</li>
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <div class="w3-bar-item w3-hover-shadow experience-box">
+                                <div class="subhead company">
+                                    <a href="http://www.infoimpulse.com/" target="_blank">InfoImpulse Enterprise Solutions</a>
+                                </div>
+                                <div class="post">
+                                    Android Trainee Intern
+                                    <span class="date" style="float: right;">Jun' 19 - Jul' 19</span>
+                                </div>
+                                <div class="description">
+                                    <ul>
+                                        <li>Developed a member directory application, where employees of the company can maintain their profiles.</li>
+                                        <li>Search, view and add notifications for any event.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-cell w3-mobile" style="width: 50%;">
+                        <div class="w3-bar-block">
+                            <div class="w3-bar-item" >Non-Technical <i class="fas fa-chevron-right" style="color:rgb(98, 240, 98)"></i></div>
+                            <div class="w3-bar-item w3-hover-shadow experience-box">
+                                <div class="subhead company">
+                                    <a href="https://www.scaler.com/" target="_blank"><img src="img/scalerAcademy.png" class="company-icon"> Scaler Academy</a>
+                                </div>
+                                <div class="post">
+                                    Campus Lead: Scaler Achiever Club
+                                    <span class="date" style="float: right;">Mar' 20 - Present</span>
+                                </div>
+                                <div class="description">
+                                    <ul>
+                                        <li>Encouraged students to develop good coding skills by encoraging them to participate in company's practice and hiring test.</li>
+                                        <li>Intermediated between the company and placement cell to invite company for recruitments.</li>
+                                        <li>Fourth best Quaterly Campus Lead</li>
+                                    </ul>
+                                </div>
+                            </div>
+        
+                            <div class="w3-bar-item w3-hover-shadow experience-box">
+                                <div class="subhead company">
+                                    <a href="https://www.geeksforgeeks.org/" target="_blank"><img src="img/geeksforgeeks.png" class="company-icon"> GeeksforGeeks</a>
+                                </div>
+                                <div class="post">
+                                    Campus Ambassador
+                                    <span class="date" style="float: right;">Jul' 18 - Apr' 19</span>
+                                </div>
+                                <div class="description">Promoted company's web platform to help students improve their technical skills.</div>
+                            </div>
+        
+                            <div class="w3-bar-item w3-hover-shadow experience-box">
+                                <div class="subhead company">
+                                    <a href="https://internshala.com/" target="_blank"><img src="img/internshala.jpg" class="company-icon"> Internshala</a>
+                                </div>
+                                <div class="post">
+                                    Student Partner 10 & 11
+                                    <span class="date" style="float: right;">Jun' 18 - Nov' 18</span>
+                                </div>
+                                <div class="description">Motivated students of first and second year to enhance their skills and take internship even in first two years of their engineering.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="margin-left: 1%; margin-right: 4%;">
+
+            <div class="social-work w3-container">
+                <a name="social-work"></a>
+                <div class="subhead">
+                    <h1>Social Work</h1>
+                </div>
+                <div class="w3-hover-shadow social-work-box w3-cell-row">
+                    <div class="w3-cell w3-rest" style="padding-right: 5%;">
+                        <a href="https://hourofcode.com/" target="_blank" class="social-name">Hour Of Code</a>
+                        <div class="description">Successfully pitched about the campaign to various school authorities and conducted sessions to introduce and promote Computer Science education to students of secondary classes. Hour of Code is a global non-profit campaign that aims to demystify 'code', to show that anybody can learn the basics, and to broaden participation in the field of computer science.</div>
+                    </div>
+                    <div class="date w3-cell multiyear">2018, 2019</div>
+                </div>
+            </div>
+
+            <hr style="margin-left: 1%; margin-right: 4%;">
+            
+            <div class="award w3-container">
+                <a name="award"></a>
+                <div class="subhead">
+                    <h1>Achievements, Awards and Certificates</h1>
+                </div>
+                <ul>
+                    <li><a href="https://drive.google.com/file/d/1AihSnCk_0WyVUtBcgojzFZDZd1hGkYj8/view?usp=sharing" target="_blank">
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;"><b>Third Winner</b><span class="description"> in Imagine Virtual Hackathon 2020 organised by Principal Global Services</span></div>
+                            <div class="w3-cell date">Jul' 20</div>
+                        </div>
+                    </a></li>
+                    <li>
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;"><b>Winner</b><span class="description"> in Codiction, a dual round coding contest (city level)</span></div>
+                            <div class="w3-cell date">Mar' 20</div>
+                        </div>
+                    </li>
+                    <li><a href="https://drive.google.com/file/d/1lfYG3wCxYBXceSY6exM8UlNJAOtWl8yS/view?usp=sharing" target="_blank">
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;"><b>Second Runner-up</b><span class="description"> in HackIndore 2.0, a 24 hour nationwide Hackathon</span></div>
+                            <div class="w3-cell date">Oct' 19</div>
+                        </div>
+                    </a></li>
+                    <li><a href="https://drive.google.com/file/d/1kECvG2b1Pg_R6U4fURs13PzQAPNH8fRe/view?usp=sharing" target="_blank">
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Java<span class="description"> - HackerRank</span></div>
+                            <div class="w3-cell date">Jul' 20</div>
+                        </div>
+                    </a></li>
+                    <li><a href="https://drive.google.com/file/d/1a5qutRu72Y0tiEkkF5lqqHSwGkIv_5i_/view?usp=sharing" target="_blank">
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Problem Solving (Intermediate)<span class="description"> - HackerRank</span></div>
+                            <div class="w3-cell date">Jul' 20</div>
+                        </div>
+                    </a></li>
+                    <li><a href="https://drive.google.com/file/d/1wvwiw5ZNi_hosUl8vj1tmepLy4mVnUVd/view?usp=sharing" target="_blank">
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Machine Learning with Python<span class="description"> - IBM (Coursera)</span></div>
+                            <div class="w3-cell date">May' 20</div>
+                        </div>
+                    </a></li>
+                    <li><a href="https://drive.google.com/file/d/18Izdy2saQ93AXVpxIZJenaCgiA6DD7rS/view?usp=sharing" target="_blank">
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Algorithms on Strings<span class="description"> - University of California San Diego (Coursera)</span></div>
+                            <div class="w3-cell date">May' 20</div>
+                        </div>
+                    </a></li>
+                    <li><a href="https://drive.google.com/file/d/1UjpmE3jStu28NbyTEBnQaQNUZPr9UImW/view?usp=sharing" target="_blank">
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Data Visualization<span class="description"> - Kaggle</span></div>
+                            <div class="w3-cell date">May' 20</div>
+                        </div>
+                    </a></li>
+                    <li><a href="https://drive.google.com/file/d/1w7HkLHC1oSrEzod5-4_MgeEnPCjKzMlU/view?usp=sharing" target="_blank">
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Intermediate Machine Learning Python<span class="description"> - Kaggle</span></div>
+                            <div class="w3-cell date">May' 20</div>
+                        </div>
+                    </a></li>
+                    <li><a href="https://drive.google.com/file/d/1geQu45S1iYgztesVHSDzaPkZOJLd6v6P/view?usp=sharing" target="_blank">
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Being part of a team, solved 7/8 puzzles in CS50 Puzzle Day,<span class="description"> organized by Harvard and Yale universities</span></div>
+                            <div class="w3-cell date">Sept' 20</div>
+                        </div>
+                    </a></li>
+                    <li>
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Taekwondo - Black Belt Den I</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="w3-cell-row">
+                            <div class="w3-cell w3-rest" style="padding-right: 5%;">Chess - secured 1<sup>st</sup> position in nodal competitions thrice</div>
+                            <div class="w3-cell date multiyear">2017, 2018, 2019</div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <hr style="margin-left: 1%; margin-right: 4%;">
+            <p style="text-align: center;">contact me at: <a href="mailto: aatmikjain1803@gmail.com" target="_blank">aatmikjain1803@gmail.com</a></p>
+        </div>
     </body>
+    <script>
+        function toggleNavigation() {
+          var x = document.getElementById("navbar-list");
+          if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+          } else { 
+            x.className = x.className.replace(" w3-show", "");
+          }
+        }
+
+        window.addEventListener('scroll', function(){
+            var scroll = document.querySelector('.scrollTop');
+            scroll.classList.toggle("activeTop", window.scrollY>600)
+        });
+    </script>
 </html>
+
+
+<!--To Do:
+color of description
+Extracurricular
+Black belt certificate
+-->
