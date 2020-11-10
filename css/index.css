@@ -10,7 +10,7 @@ a{
 }
 
 b{
-    font-size: 105%;
+    font-size: 1.05rem;
 }
 
 #sidebar a{
@@ -110,7 +110,7 @@ b{
 
 .about p{
     margin-top: 5%;
-    font-size: 125%;
+    font-size: 1.25rem;
 }
 
 .education {
@@ -123,12 +123,12 @@ b{
 }
 
 .subhead h1{
-    font-size: 300%;
+    font-size: 3.00rem;
     color: rgb(181, 228, 171);
 }
 
 .degree{
-    font-size: 150%;
+    font-size: 1.50rem;
 }
 
 .date{
@@ -212,7 +212,7 @@ b{
 }
 
 .company{
-    font-size: 150%;
+    font-size: 1.50rem;
 }
 
 .description{
@@ -226,7 +226,7 @@ b{
 }
 
 .social-name{
-    font-size: 150%;
+    font-size: 1.50rem;
 }
 
 .award{
