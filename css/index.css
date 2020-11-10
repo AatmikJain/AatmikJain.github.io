@@ -28,6 +28,7 @@ b{
     border: none;
     outline: none;
     cursor: pointer;
+    text-align: right;
 }
 
 #navbar-list{
@@ -257,7 +258,7 @@ b{
     opacity: 1;
 }
 
-@media screen and (max-width: 684px){
+@media screen and (max-width: 1200px){
     body{
         text-align: center;
     }
@@ -275,6 +276,7 @@ b{
         transform: scale(0.7);
         margin-top: -10%;
         margin-bottom: -10%;
+        box-shadow: 0 0 25px white;
     }
 
     .container{
