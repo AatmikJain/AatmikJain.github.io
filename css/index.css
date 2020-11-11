@@ -24,6 +24,8 @@ b{
 #navbar-button{
     padding-right: 2%;
     background: none;
+    /* height: 10rem;
+    font-size: 25rem; */
     color: white;
     border: none;
     outline: none;
@@ -73,40 +75,40 @@ b{
     transition: all 0.5s ease;
     }
       
-    /* github */
-    .contact li:hover .fa-github {
+/* github */
+.contact li:hover .fa-github {
     color: white;
     text-shadow: 0 0 15px white;
     transition: all 0.5s ease;
-    }
-    
-    /* instagram */  
-    .contact li:hover .fa-instagram {
+}
+
+/* instagram */  
+.contact li:hover .fa-instagram {
     color: #bc2a8d;
     text-shadow: 0 0 15px #bc2a8d;
     transition: all 0.5s ease;
-    }
-    
-    /* twitter */
-    .contact li:hover .fa-twitter {
+}
+
+/* twitter */
+.contact li:hover .fa-twitter {
     color: #00aced;
     text-shadow: 0 0 15px #00aced;
     transition: all 0.5s ease;
-    }
-    
-    /* mail */
-    .contact li:hover .fa-envelope {
+}
+
+/* mail */
+.contact li:hover .fa-envelope {
     color: #dd4b39;
     text-shadow: 0 0 15px #dd4b39;
     transition: all 0.5s ease;
-    }
-    
-    /*resume*/
-    .contact li:hover .fa-address-card {
+}
+
+/*resume*/
+.contact li:hover .fa-address-card {
     color: gray;
     text-shadow: 0 0 15px gray;
     transition: all 0.5s ease;
-    }    
+}    
 
 .about p{
     margin-top: 5%;
@@ -201,10 +203,6 @@ b{
     margin-top: 3%;
 }
 
-.experience-box:hover{
-    /* -webkit-transform: scale(1.03); */
-}
-
 .company-icon{
     height: 35px;
     border-radius: 50%;
@@ -212,7 +210,7 @@ b{
 }
 
 .company{
-    font-size: 1.50rem;
+    font-size: 1.5rem;
 }
 
 .description{
@@ -258,9 +256,19 @@ b{
     opacity: 1;
 }
 
+.footer{
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -1%;
+}
+
 @media screen and (max-width: 1200px){
     body{
         text-align: center;
+    }
+
+    b{
+        font-size: 1.05em;
     }
 
     .w3-sidebar{
@@ -285,25 +293,88 @@ b{
     }
 
     #name{
-        font-size: 500%;
+        font-size: 7rem;
     }
 
     .contact{
         margin: 0 auto;
     }
 
+    .about p{
+        text-align: justify;
+        font-size: 2rem;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .subhead h1{
+        font-size: 4rem;
+        color: rgb(181, 228, 171);
+    }
+
     .education {
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    .degree{
+        font-size: 2.5rem;
+    }
+    
+    .date{
+        font-size: 2rem;
+    }
+    
+    .branch, .institute{
+        font-size: 2rem;
+    }
+    
+    .skills{
         width: 97%;
+        margin-left: 2%;
+        font-size: 2rem;
+    }
+    .skill-category, .skill-sub-category{
+        font-size: 2rem;
+    }
+
+    .coding-icon{
+        height: 8rem;
     }
 
     .experience{
         width: 100%
     }
+
     .experience-cell{
         width: 100%;
     }
 
+    .tech{
+        font-size: 2rem;
+    }
+
+    .company-icon{
+        height: 3.5rem;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .company{
+        font-size: 2.5rem;
+    }
+
+    .post{
+        font-size: 2rem;
+    }
+
+    .description{
+        margin-left: 2%;
+        font-size: 1.7rem;
+    }
+
     .social-work{
+        margin-left: 2%;
         width: 97%;
     }
 
@@ -313,5 +384,20 @@ b{
 
     .coding-list{
         margin: 0 auto;
+    }
+
+    .social-name{
+        font-size: 2.5rem;
+    }
+
+    .award{
+        margin-left: 2%;
+        font-size: 2rem;
+        text-align: left;
+    }
+    
+    .footer{
+        font-size: 1.5rem;
+
     }
 }
