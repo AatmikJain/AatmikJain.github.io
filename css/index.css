@@ -191,6 +191,10 @@ b{
     transform: scale(1.1);
 }
 
+.br-job{
+    display: block;
+}
+
 .experience{
     width: 97%;
 }
@@ -340,6 +344,10 @@ b{
 
     .coding-icon{
         height: 8rem;
+    }
+
+    .br-job{
+        display: none;
     }
 
     .experience{
